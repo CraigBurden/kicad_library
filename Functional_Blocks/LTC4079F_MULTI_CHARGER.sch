@@ -1,0 +1,409 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3000 2800 0    50   Input ~ 0
+VIN
+Text HLabel 7000 2500 2    50   Output ~ 0
+VBATT
+Text HLabel 6050 3700 2    50   Output ~ 0
+~CHRG
+$Comp
+L custom:LTC4079 U7
+U 1 1 5C52E068
+P 4650 3250
+F 0 "U7" H 4250 3850 50  0000 C CNN
+F 1 "LTC4079" H 4650 3300 50  0000 C CNN
+F 2 "" H 3600 2900 50  0001 C CNN
+F 3 "" H 3600 2900 50  0001 C CNN
+	1    4650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R68
+U 1 1 5C52EC91
+P 3750 3550
+F 0 "R68" H 3809 3596 50  0000 L CNN
+F 1 "1.2k" H 3809 3505 50  0000 L CNN
+F 2 "" H 3750 3550 50  0001 C CNN
+F 3 "~" H 3750 3550 50  0001 C CNN
+	1    3750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3650 4050 3600
+Wire Wire Line
+	4050 3600 4100 3600
+$Comp
+L power:GND #PWR0137
+U 1 1 5C52EE15
+P 4650 3900
+F 0 "#PWR0137" H 4650 3650 50  0001 C CNN
+F 1 "GND" H 4655 3727 50  0000 C CNN
+F 2 "" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3850 4650 3900
+Wire Wire Line
+	3750 3450 3750 3350
+Wire Wire Line
+	3750 3350 4100 3350
+$Comp
+L power:GND #PWR0161
+U 1 1 5C52EF51
+P 4050 3650
+F 0 "#PWR0161" H 4050 3400 50  0001 C CNN
+F 1 "GND" H 4055 3477 50  0000 C CNN
+F 2 "" H 4050 3650 50  0001 C CNN
+F 3 "" H 4050 3650 50  0001 C CNN
+	1    4050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 5C52EF68
+P 3750 3900
+F 0 "#PWR0162" H 3750 3650 50  0001 C CNN
+F 1 "GND" H 3755 3727 50  0000 C CNN
+F 2 "" H 3750 3900 50  0001 C CNN
+F 3 "" H 3750 3900 50  0001 C CNN
+	1    3750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3900 3750 3650
+$Comp
+L Device:C_Small C71
+U 1 1 5C53134D
+P 3750 2950
+F 0 "C71" H 3842 2996 50  0000 L CNN
+F 1 "10uF" H 3842 2905 50  0000 L CNN
+F 2 "" H 3750 2950 50  0001 C CNN
+F 3 "~" H 3750 2950 50  0001 C CNN
+	1    3750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2850 3750 2800
+Wire Wire Line
+	3750 2800 4050 2800
+Connection ~ 3750 2800
+$Comp
+L power:GND #PWR0163
+U 1 1 5C531635
+P 3750 3100
+F 0 "#PWR0163" H 3750 2850 50  0001 C CNN
+F 1 "GND" H 3755 2927 50  0000 C CNN
+F 2 "" H 3750 3100 50  0001 C CNN
+F 3 "" H 3750 3100 50  0001 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3050 3750 3100
+Wire Wire Line
+	4100 3000 4050 3000
+Wire Wire Line
+	4050 3000 4050 2800
+Connection ~ 4050 2800
+Wire Wire Line
+	4050 2800 4100 2800
+$Comp
+L Device:Battery_Cell BT2
+U 1 1 5C532570
+P 6500 3000
+F 0 "BT2" H 6618 3050 50  0000 L CNN
+F 1 "LEAD_ACID" H 6618 3005 50  0001 L CNN
+F 2 "" V 6500 3060 50  0001 C CNN
+F 3 "~" V 6500 3060 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R69
+U 1 1 5C5331F6
+P 5650 2650
+F 0 "R69" H 5709 2696 50  0000 L CNN
+F 1 "1M" H 5709 2605 50  0000 L CNN
+F 2 "" H 5650 2650 50  0001 C CNN
+F 3 "~" H 5650 2650 50  0001 C CNN
+	1    5650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R70
+U 1 1 5C53326A
+P 5650 2950
+F 0 "R70" H 5709 2996 50  0000 L CNN
+F 1 "100k" H 5709 2905 50  0000 L CNN
+F 2 "" H 5650 2950 50  0001 C CNN
+F 3 "~" H 5650 2950 50  0001 C CNN
+F 4 "Without NTC, this must be 50k" H 5650 2950 50  0001 C CNN "Note"
+	1    5650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R71
+U 1 1 5C533294
+P 5650 3250
+F 0 "R71" H 5709 3296 50  0000 L CNN
+F 1 "102k" H 5709 3205 50  0000 L CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "~" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2750 5650 2800
+Wire Wire Line
+	5650 3050 5650 3100
+Connection ~ 5650 3100
+Wire Wire Line
+	5650 3100 5650 3150
+Wire Wire Line
+	5200 3200 5450 3200
+Wire Wire Line
+	5450 3200 5450 3400
+Wire Wire Line
+	5450 3400 5650 3400
+Wire Wire Line
+	5650 3400 5650 3350
+Wire Wire Line
+	5200 3100 5650 3100
+Wire Wire Line
+	5200 2800 5250 2800
+Wire Wire Line
+	5250 2800 5250 2500
+Wire Wire Line
+	5250 2500 5650 2500
+$Comp
+L Device:Thermistor_NTC TH2
+U 1 1 5C538756
+P 6050 2950
+F 0 "TH2" H 6148 2996 50  0000 L CNN
+F 1 "100k" H 6148 2905 50  0000 L CNN
+F 2 "" H 6050 3000 50  0001 C CNN
+F 3 "~" H 6050 3000 50  0001 C CNN
+	1    6050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2500 5650 2550
+Wire Wire Line
+	6050 2800 5650 2800
+Connection ~ 5650 2800
+Wire Wire Line
+	5650 2800 5650 2850
+Wire Wire Line
+	5650 3100 6050 3100
+$Comp
+L power:GND #PWR0164
+U 1 1 5C53B1FE
+P 5350 3350
+F 0 "#PWR0164" H 5350 3100 50  0001 C CNN
+F 1 "GND" H 5355 3177 50  0000 C CNN
+F 2 "" H 5350 3350 50  0001 C CNN
+F 3 "" H 5350 3350 50  0001 C CNN
+	1    5350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3350 5350 3350
+NoConn ~ 5200 3450
+$Comp
+L Device:R_Small R72
+U 1 1 5C53CA2E
+P 6050 3550
+F 0 "R72" H 6109 3596 50  0000 L CNN
+F 1 "10k" H 6109 3505 50  0000 L CNN
+F 2 "" H 6050 3550 50  0001 C CNN
+F 3 "~" H 6050 3550 50  0001 C CNN
+	1    6050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0165
+U 1 1 5C53CADE
+P 6050 3400
+F 0 "#PWR0165" H 6050 3250 50  0001 C CNN
+F 1 "+3.3V" H 6065 3573 50  0000 C CNN
+F 2 "" H 6050 3400 50  0001 C CNN
+F 3 "" H 6050 3400 50  0001 C CNN
+	1    6050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3400 6050 3450
+Wire Wire Line
+	6050 3700 6050 3650
+Wire Wire Line
+	5200 3600 5400 3600
+Wire Wire Line
+	5400 3600 5400 3700
+Wire Wire Line
+	5400 3700 6050 3700
+Wire Wire Line
+	5650 2500 6500 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	6500 2800 6500 2500
+Connection ~ 6500 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5C543805
+P 6500 3300
+AR Path="/5C543805" Ref="#PWR?"  Part="1" 
+AR Path="/5C51CF08/5C543805" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 6500 3050 50  0001 C CNN
+F 1 "GND" H 6505 3127 50  0000 C CNN
+F 2 "" H 6500 3300 50  0001 C CNN
+F 3 "" H 6500 3300 50  0001 C CNN
+	1    6500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3100 6500 3300
+Wire Notes Line
+	5900 2750 6750 2750
+Wire Notes Line
+	6750 2750 6750 3150
+Wire Notes Line
+	6750 3150 5900 3150
+Wire Notes Line
+	5900 3150 5900 2750
+Text Notes 6050 2750 0    50   ~ 0
+SLA Battery\n
+Text HLabel 7000 2900 2    50   Output ~ 0
+VBATT_SENSE
+Wire Wire Line
+	6850 2900 6850 3000
+Wire Wire Line
+	7000 2900 6850 2900
+Wire Wire Line
+	6500 2500 6850 2500
+Wire Wire Line
+	6850 2500 7000 2500
+Connection ~ 6850 2500
+Wire Wire Line
+	6850 2500 6850 2600
+Wire Wire Line
+	6850 3300 6850 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5C4AEE4A
+P 6850 3300
+AR Path="/5C4AEE4A" Ref="#PWR?"  Part="1" 
+AR Path="/5C51CF08/5C4AEE4A" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 6850 3050 50  0001 C CNN
+F 1 "GND" H 6855 3127 50  0000 C CNN
+F 2 "" H 6850 3300 50  0001 C CNN
+F 3 "" H 6850 3300 50  0001 C CNN
+	1    6850 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 2900
+Wire Wire Line
+	6850 2800 6850 2900
+$Comp
+L Device:R_Small R?
+U 1 1 5C4AEE42
+P 6850 3100
+AR Path="/5C4AEE42" Ref="R?"  Part="1" 
+AR Path="/5C51CF08/5C4AEE42" Ref="R12"  Part="1" 
+F 0 "R12" H 6909 3146 50  0000 L CNN
+F 1 "10k" H 6909 3055 50  0000 L CNN
+F 2 "Resistors:0603" H 6850 3100 50  0001 C CNN
+F 3 "" H 6850 3100 50  0001 C CNN
+F 4 "Battery Backup" H 6850 3100 50  0001 C CNN "Functional Block"
+	1    6850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C4AEE3A
+P 6850 2700
+AR Path="/5C4AEE3A" Ref="R?"  Part="1" 
+AR Path="/5C51CF08/5C4AEE3A" Ref="R11"  Part="1" 
+F 0 "R11" H 6909 2746 50  0000 L CNN
+F 1 "30k" H 6909 2655 50  0000 L CNN
+F 2 "Resistors:0603" H 6850 2700 50  0001 C CNN
+F 3 "" H 6850 2700 50  0001 C CNN
+F 4 "Battery Backup" H 6850 2700 50  0001 C CNN "Functional Block"
+	1    6850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3200 3400 3300
+Wire Wire Line
+	3200 3200 3400 3200
+Text HLabel 3200 3200 0    50   Output ~ 0
+PG
+Wire Wire Line
+	3400 2800 3000 2800
+Wire Wire Line
+	3750 2800 3400 2800
+Connection ~ 3400 2800
+Wire Wire Line
+	3400 2900 3400 2800
+Connection ~ 3400 3200
+Wire Wire Line
+	3400 3100 3400 3200
+Wire Wire Line
+	3400 3600 3400 3500
+$Comp
+L power:GND #PWR?
+U 1 1 5C5473E0
+P 3400 3600
+AR Path="/5C5473E0" Ref="#PWR?"  Part="1" 
+AR Path="/5C51CF08/5C5473E0" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 3400 3350 50  0001 C CNN
+F 1 "GND" H 3405 3427 50  0000 C CNN
+F 2 "" H 3400 3600 50  0001 C CNN
+F 3 "" H 3400 3600 50  0001 C CNN
+	1    3400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C5473D8
+P 3400 3400
+AR Path="/5C5473D8" Ref="R?"  Part="1" 
+AR Path="/5C51CF08/5C5473D8" Ref="R67"  Part="1" 
+F 0 "R67" H 3459 3446 50  0000 L CNN
+F 1 "10k" H 3459 3355 50  0000 L CNN
+F 2 "Resistors:0603" H 3400 3400 50  0001 C CNN
+F 3 "" H 3400 3400 50  0001 C CNN
+F 4 "Battery Backup" H 3400 3400 50  0001 C CNN "Functional Block"
+	1    3400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C5473D0
+P 3400 3000
+AR Path="/5C5473D0" Ref="R?"  Part="1" 
+AR Path="/5C51CF08/5C5473D0" Ref="R60"  Part="1" 
+F 0 "R60" H 3459 3046 50  0000 L CNN
+F 1 "30k" H 3459 2955 50  0000 L CNN
+F 2 "Resistors:0603" H 3400 3000 50  0001 C CNN
+F 3 "" H 3400 3000 50  0001 C CNN
+F 4 "Battery Backup" H 3400 3000 50  0001 C CNN "Functional Block"
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

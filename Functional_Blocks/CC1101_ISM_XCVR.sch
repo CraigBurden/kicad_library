@@ -1,0 +1,626 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_RF-Transceiver-ICs:CC1101RGPR U5
+U 1 1 5B938D91
+P 3300 4200
+F 0 "U5" H 2900 4750 60  0000 C CNN
+F 1 "CC1101RGPR" V 3750 4500 60  0000 C CNN
+F 2 "digikey-footprints:QFN-20-1EP_4x4mm_RevA" H 3500 4400 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/CC1101.pdf" H 3500 4500 60  0001 L CNN
+F 4 "CC1101RGPR" H 3500 4700 60  0001 L CNN "MPN"
+F 5 "Texas Instruments" H 3500 5300 60  0001 L CNN "Manufacturer"
+F 6 "Tranceiver" H 3300 4200 50  0001 C CNN "Functional Block"
+F 7 "296-35718-1-ND" H 3500 4600 60  0001 L CNN "Digi-Key_PN"
+F 8 "RF/IF and RFID" H 3500 4800 60  0001 L CNN "Category"
+F 9 "RF Transceiver ICs" H 3500 4900 60  0001 L CNN "Family"
+F 10 "https://media.digikey.com/pdf/Data%20Sheets/Texas%20Instruments%20PDFs/CC1101.pdf" H 3500 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 11 "/product-detail/en/texas-instruments/CC1101RGPR/296-35718-1-ND/3947329" H 3500 5100 60  0001 L CNN "DK_Detail_Page"
+F 12 "IC RF TXRX ISM<1GHZ 20-VFQFN" H 3500 5200 60  0001 L CNN "Description"
+F 13 "Active" H 3500 5400 60  0001 L CNN "Status"
+	1    3300 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_Small Y2
+U 1 1 5B939A0E
+P 4450 4400
+F 0 "Y2" V 4496 4312 50  0000 R CNN
+F 1 "26MHz" V 4405 4312 50  0000 R CNN
+F 2 "Clocks:HC49UP" H 4450 4400 50  0001 C CNN
+F 3 "~" H 4450 4400 50  0001 C CNN
+F 4 "Tranceiver" H 4450 4400 50  0001 C CNN "Functional Block"
+F 5 "NX3225GA" V 4450 4400 50  0001 C CNN "Part"
+	1    4450 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C45
+U 1 1 5B939AF9
+P 4850 4300
+F 0 "C45" V 4621 4300 50  0000 C CNN
+F 1 "27pF" V 4712 4300 50  0000 C CNN
+F 2 "Capacitors:0603" H 4850 4300 50  0001 C CNN
+F 3 "~" H 4850 4300 50  0001 C CNN
+F 4 "Tranceiver" H 4850 4300 50  0001 C CNN "Functional Block"
+F 5 "C0G" V 4850 4300 50  0001 C CNN "Dielectric"
+	1    4850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C46
+U 1 1 5B939B51
+P 4850 4500
+F 0 "C46" V 5050 4500 50  0000 C CNN
+F 1 "27pF" V 4950 4500 50  0000 C CNN
+F 2 "Capacitors:0603" H 4850 4500 50  0001 C CNN
+F 3 "~" H 4850 4500 50  0001 C CNN
+F 4 "Tranceiver" H 4850 4500 50  0001 C CNN "Functional Block"
+F 5 "C0G" V 4850 4500 50  0001 C CNN "Dielectric"
+	1    4850 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5B939CDC
+P 5050 4300
+F 0 "#PWR0124" H 5050 4050 50  0001 C CNN
+F 1 "GND" V 5055 4172 50  0000 R CNN
+F 2 "" H 5050 4300 50  0001 C CNN
+F 3 "" H 5050 4300 50  0001 C CNN
+	1    5050 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5B939D29
+P 5050 4500
+F 0 "#PWR0125" H 5050 4250 50  0001 C CNN
+F 1 "GND" V 5055 4372 50  0000 R CNN
+F 2 "" H 5050 4500 50  0001 C CNN
+F 3 "" H 5050 4500 50  0001 C CNN
+	1    5050 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 4300 5050 4300
+Wire Wire Line
+	4950 4500 5050 4500
+Wire Wire Line
+	4450 4500 4750 4500
+Wire Wire Line
+	4750 4300 4450 4300
+Connection ~ 4450 4500
+Connection ~ 4450 4300
+Wire Wire Line
+	4300 4300 4450 4300
+$Comp
+L Device:C_Small C48
+U 1 1 5B93ADCE
+P 7500 4400
+F 0 "C48" H 7592 4446 50  0000 L CNN
+F 1 "220pF" H 7592 4355 50  0000 L CNN
+F 2 "Capacitors:0402" H 7500 4400 50  0001 C CNN
+F 3 "~" H 7500 4400 50  0001 C CNN
+F 4 "Tranceiver" H 7500 4400 50  0001 C CNN "Functional Block"
+F 5 "C0G" H 7500 4400 50  0001 C CNN "Dielectric"
+	1    7500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C49
+U 1 1 5B93AF0E
+P 7700 3950
+F 0 "C49" V 7471 3950 50  0000 C CNN
+F 1 "3.9pF" V 7562 3950 50  0000 C CNN
+F 2 "Capacitors:0402" H 7700 3950 50  0001 C CNN
+F 3 "~" H 7700 3950 50  0001 C CNN
+F 4 "Tranceiver" H 7700 3950 50  0001 C CNN "Functional Block"
+F 5 "C0G" V 7700 3950 50  0001 C CNN "Dielectric"
+	1    7700 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3600 7200 3650
+Wire Wire Line
+	7200 3650 7600 3650
+Wire Wire Line
+	7600 3950 7500 3950
+Wire Wire Line
+	7500 3950 7500 4050
+Wire Wire Line
+	7500 4250 7500 4300
+Wire Wire Line
+	7800 3650 7900 3650
+Wire Wire Line
+	7900 3650 7900 3800
+Wire Wire Line
+	7900 3950 7800 3950
+$Comp
+L power:GND #PWR0126
+U 1 1 5B93B319
+P 7200 3350
+F 0 "#PWR0126" H 7200 3100 50  0001 C CNN
+F 1 "GND" H 7205 3177 50  0000 C CNN
+F 2 "" H 7200 3350 50  0001 C CNN
+F 3 "" H 7200 3350 50  0001 C CNN
+	1    7200 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3350 7200 3400
+Text Label 7500 3950 2    50   ~ 0
+RF_P
+Text Label 7200 3650 2    50   ~ 0
+RF_N
+Text Label 3900 4700 0    50   ~ 0
+RF_N
+Text Label 3900 4600 0    50   ~ 0
+RF_P
+$Comp
+L Device:C_Small C50
+U 1 1 5B93B895
+P 8300 4000
+F 0 "C50" H 8208 3954 50  0000 R CNN
+F 1 "8.2pF" H 8208 4045 50  0000 R CNN
+F 2 "Capacitors:0402" H 8300 4000 50  0001 C CNN
+F 3 "~" H 8300 4000 50  0001 C CNN
+F 4 "Tranceiver" H 8300 4000 50  0001 C CNN "Functional Block"
+F 5 "C0G" H 8300 4000 50  0001 C CNN "Dielectric"
+	1    8300 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C52
+U 1 1 5B93B955
+P 8900 3800
+F 0 "C52" V 8671 3800 50  0000 C CNN
+F 1 "220pF" V 8762 3800 50  0000 C CNN
+F 2 "Capacitors:0402" H 8900 3800 50  0001 C CNN
+F 3 "~" H 8900 3800 50  0001 C CNN
+F 4 "Tranceiver" H 8900 3800 50  0001 C CNN "Functional Block"
+F 5 "C0G" V 8900 3800 50  0001 C CNN "Dielectric"
+	1    8900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 3800 7900 3800
+Connection ~ 7900 3800
+Wire Wire Line
+	7900 3800 7900 3950
+Wire Wire Line
+	8200 3800 8300 3800
+Wire Wire Line
+	8600 3800 8700 3800
+Wire Wire Line
+	8300 3900 8300 3800
+Connection ~ 8300 3800
+Wire Wire Line
+	8300 3800 8400 3800
+Wire Wire Line
+	8700 3900 8700 3800
+Connection ~ 8700 3800
+Wire Wire Line
+	8700 3800 8800 3800
+$Comp
+L power:GND #PWR0128
+U 1 1 5B93C3FB
+P 8300 4200
+F 0 "#PWR0128" H 8300 3950 50  0001 C CNN
+F 1 "GND" H 8305 4027 50  0000 C CNN
+F 2 "" H 8300 4200 50  0001 C CNN
+F 3 "" H 8300 4200 50  0001 C CNN
+	1    8300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5B93C43E
+P 8700 4200
+F 0 "#PWR0129" H 8700 3950 50  0001 C CNN
+F 1 "GND" H 8705 4027 50  0000 C CNN
+F 2 "" H 8700 4200 50  0001 C CNN
+F 3 "" H 8700 4200 50  0001 C CNN
+	1    8700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4200 8300 4100
+Wire Wire Line
+	8700 4200 8700 4100
+$Comp
+L power:GND #PWR0127
+U 1 1 5B93D6F5
+P 7500 4550
+F 0 "#PWR0127" H 7500 4300 50  0001 C CNN
+F 1 "GND" H 7505 4377 50  0000 C CNN
+F 2 "" H 7500 4550 50  0001 C CNN
+F 3 "" H 7500 4550 50  0001 C CNN
+	1    7500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4500 7500 4550
+$Comp
+L Device:C_Small C44
+U 1 1 5B93DF30
+P 3500 3200
+F 0 "C44" V 3700 3200 50  0000 C CNN
+F 1 "100nF" V 3600 3200 50  0000 C CNN
+F 2 "Capacitors:0603" H 3500 3200 50  0001 C CNN
+F 3 "~" H 3500 3200 50  0001 C CNN
+F 4 "Tranceiver" H 3500 3200 50  0001 C CNN "Functional Block"
+F 5 "X7R" V 3500 3200 50  0001 C CNN "Dielectric"
+	1    3500 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5B93E0AE
+P 3500 3000
+F 0 "#PWR0122" H 3500 2750 50  0001 C CNN
+F 1 "GND" H 3505 2827 50  0000 C CNN
+F 2 "" H 3500 3000 50  0001 C CNN
+F 3 "" H 3500 3000 50  0001 C CNN
+	1    3500 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3000 3500 3100
+Wire Wire Line
+	3500 3300 3500 3500
+Wire Wire Line
+	3600 3500 3600 3450
+Wire Wire Line
+	3600 3450 3400 3450
+Wire Wire Line
+	3000 3450 3000 3500
+Wire Wire Line
+	3100 3500 3100 3450
+Connection ~ 3100 3450
+Wire Wire Line
+	3100 3450 3000 3450
+Wire Wire Line
+	3200 3500 3200 3450
+Connection ~ 3200 3450
+Wire Wire Line
+	3200 3450 3100 3450
+Wire Wire Line
+	3300 3500 3300 3450
+Connection ~ 3300 3450
+Wire Wire Line
+	3300 3450 3200 3450
+Wire Wire Line
+	3400 3500 3400 3450
+Connection ~ 3400 3450
+Wire Wire Line
+	3400 3450 3300 3450
+$Comp
+L power:+3.3V #PWR0119
+U 1 1 5B940A40
+P 3000 3350
+F 0 "#PWR0119" H 3000 3200 50  0001 C CNN
+F 1 "+3.3V" H 3015 3523 50  0000 C CNN
+F 2 "" H 3000 3350 50  0001 C CNN
+F 3 "" H 3000 3350 50  0001 C CNN
+	1    3000 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3350 3000 3450
+Connection ~ 3000 3450
+$Comp
+L power:GND #PWR0120
+U 1 1 5B9417FF
+P 3200 5300
+F 0 "#PWR0120" H 3200 5050 50  0001 C CNN
+F 1 "GND" H 3205 5127 50  0000 C CNN
+F 2 "" H 3200 5300 50  0001 C CNN
+F 3 "" H 3200 5300 50  0001 C CNN
+	1    3200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5B94183A
+P 3300 5300
+F 0 "#PWR0121" H 3300 5050 50  0001 C CNN
+F 1 "GND" H 3305 5127 50  0000 C CNN
+F 2 "" H 3300 5300 50  0001 C CNN
+F 3 "" H 3300 5300 50  0001 C CNN
+	1    3300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5200 3200 5300
+Wire Wire Line
+	3300 5200 3300 5300
+$Comp
+L power:GND #PWR0118
+U 1 1 5B943893
+P 2600 4600
+F 0 "#PWR0118" H 2600 4350 50  0001 C CNN
+F 1 "GND" V 2605 4472 50  0000 R CNN
+F 2 "" H 2600 4600 50  0001 C CNN
+F 3 "" H 2600 4600 50  0001 C CNN
+	1    2600 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 4600 2700 4600
+$Comp
+L Device:C_Small C40
+U 1 1 5B945F70
+P 1050 2850
+F 0 "C40" H 958 2804 50  0000 R CNN
+F 1 "100pF" H 958 2895 50  0000 R CNN
+F 2 "Capacitors:0603" H 1050 2850 50  0001 C CNN
+F 3 "~" H 1050 2850 50  0001 C CNN
+F 4 "Tranceiver" H 1050 2850 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    1050 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C41
+U 1 1 5B945FDC
+P 1450 2850
+F 0 "C41" H 1358 2804 50  0000 R CNN
+F 1 "10uF" H 1358 2895 50  0000 R CNN
+F 2 "Capacitors:0805" H 1450 2850 50  0001 C CNN
+F 3 "~" H 1450 2850 50  0001 C CNN
+F 4 "Tranceiver" H 1450 2850 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    1450 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C42
+U 1 1 5B946018
+P 1800 2850
+F 0 "C42" H 1708 2804 50  0000 R CNN
+F 1 "10nF" H 1708 2895 50  0000 R CNN
+F 2 "Capacitors:0603" H 1800 2850 50  0001 C CNN
+F 3 "~" H 1800 2850 50  0001 C CNN
+F 4 "Tranceiver" H 1800 2850 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    1800 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C43
+U 1 1 5B946068
+P 2200 2850
+F 0 "C43" H 2108 2804 50  0000 R CNN
+F 1 "100nF" H 2108 2895 50  0000 R CNN
+F 2 "Capacitors:0603" H 2200 2850 50  0001 C CNN
+F 3 "~" H 2200 2850 50  0001 C CNN
+F 4 "Tranceiver" H 2200 2850 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    2200 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 5B94611E
+P 1050 2600
+F 0 "#PWR0116" H 1050 2450 50  0001 C CNN
+F 1 "+3.3V" H 1065 2773 50  0000 C CNN
+F 2 "" H 1050 2600 50  0001 C CNN
+F 3 "" H 1050 2600 50  0001 C CNN
+	1    1050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2600 1050 2700
+Wire Wire Line
+	2200 2750 2200 2700
+Connection ~ 1050 2700
+Wire Wire Line
+	1050 2700 1050 2750
+Wire Wire Line
+	1450 2750 1450 2700
+Wire Wire Line
+	1800 2750 1800 2700
+$Comp
+L power:GND #PWR0117
+U 1 1 5B948F6E
+P 2200 3050
+F 0 "#PWR0117" H 2200 2800 50  0001 C CNN
+F 1 "GND" H 2205 2877 50  0000 C CNN
+F 2 "" H 2200 3050 50  0001 C CNN
+F 3 "" H 2200 3050 50  0001 C CNN
+	1    2200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3050 2200 3000
+Wire Wire Line
+	1050 3000 1050 2950
+Connection ~ 2200 3000
+Wire Wire Line
+	2200 3000 2200 2950
+Wire Wire Line
+	1450 2950 1450 3000
+Wire Wire Line
+	1800 2950 1800 3000
+$Comp
+L Device:R_Small R52
+U 1 1 5B954EB4
+P 4350 4950
+F 0 "R52" H 4409 4996 50  0000 L CNN
+F 1 "56k" H 4409 4905 50  0000 L CNN
+F 2 "Resistors:0603" H 4350 4950 50  0001 C CNN
+F 3 "~" H 4350 4950 50  0001 C CNN
+F 4 "Tranceiver" H 4350 4950 50  0001 C CNN "Functional Block"
+	1    4350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4800 4350 4800
+Wire Wire Line
+	4350 4800 4350 4850
+$Comp
+L power:GND #PWR0123
+U 1 1 5B956410
+P 4350 5100
+F 0 "#PWR0123" H 4350 4850 50  0001 C CNN
+F 1 "GND" H 4355 4927 50  0000 C CNN
+F 2 "" H 4350 5100 50  0001 C CNN
+F 3 "" H 4350 5100 50  0001 C CNN
+	1    4350 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5050 4350 5100
+$Comp
+L Device:C_Small C51
+U 1 1 5B957FE9
+P 8700 4000
+F 0 "C51" H 8608 3954 50  0000 R CNN
+F 1 "5.6pF" H 8608 4045 50  0000 R CNN
+F 2 "Capacitors:0402" H 8700 4000 50  0001 C CNN
+F 3 "~" H 8700 4000 50  0001 C CNN
+F 4 "Tranceiver" H 8700 4000 50  0001 C CNN "Functional Block"
+F 5 "C0G" V 8700 4000 50  0001 C CNN "Dielectric"
+	1    8700 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C47
+U 1 1 5B9582CE
+P 7200 3500
+F 0 "C47" H 7108 3454 50  0000 R CNN
+F 1 "3.9pF" H 7108 3545 50  0000 R CNN
+F 2 "Capacitors:0402" H 7200 3500 50  0001 C CNN
+F 3 "~" H 7200 3500 50  0001 C CNN
+F 4 "Tranceiver" H 7200 3500 50  0001 C CNN "Functional Block"
+F 5 "C0G" V 7200 3500 50  0001 C CNN "Dielectric"
+	1    7200 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L_Small L2
+U 1 1 5B95B070
+P 7700 3650
+F 0 "L2" V 7885 3650 50  0000 C CNN
+F 1 "27nH" V 7794 3650 50  0000 C CNN
+F 2 "Coils:0402" H 7700 3650 50  0001 C CNN
+F 3 "~" H 7700 3650 50  0001 C CNN
+F 4 "LQG15HS" H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "Monolithic" H 7700 3650 50  0001 C CNN "Construction"
+F 7 "Tranceiver" H 7700 3650 50  0001 C CNN "Functional Block"
+	1    7700 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Small L3
+U 1 1 5B95B1B1
+P 8100 3800
+F 0 "L3" V 8285 3800 50  0000 C CNN
+F 1 "22nH" V 8194 3800 50  0000 C CNN
+F 2 "Coils:0402" H 8100 3800 50  0001 C CNN
+F 3 "~" H 8100 3800 50  0001 C CNN
+F 4 "LQG15HS" H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "Monolithic" H 8100 3800 50  0001 C CNN "Construction"
+F 7 "Tranceiver" H 8100 3800 50  0001 C CNN "Functional Block"
+	1    8100 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Small L1
+U 1 1 5B95B29D
+P 7500 4150
+F 0 "L1" H 7459 4104 50  0000 R CNN
+F 1 "27nH" H 7459 4195 50  0000 R CNN
+F 2 "Coils:0402" H 7500 4150 50  0001 C CNN
+F 3 "~" H 7500 4150 50  0001 C CNN
+F 4 "LQG15HS" H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "Monolithic" H 7500 4150 50  0001 C CNN "Construction"
+F 7 "Tranceiver" H 7500 4150 50  0001 C CNN "Functional Block"
+	1    7500 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L_Small L4
+U 1 1 5B95B36B
+P 8500 3800
+F 0 "L4" V 8685 3800 50  0000 C CNN
+F 1 "27nH" V 8594 3800 50  0000 C CNN
+F 2 "Coils:0402" H 8500 3800 50  0001 C CNN
+F 3 "~" H 8500 3800 50  0001 C CNN
+F 4 "LQG15HS" H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "Monolithic" H 8500 3800 50  0001 C CNN "Construction"
+F 7 "Tranceiver" H 8500 3800 50  0001 C CNN "Functional Block"
+	1    8500 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 2700 1450 2700
+Connection ~ 1450 2700
+Wire Wire Line
+	1050 3000 1450 3000
+Connection ~ 1450 3000
+Wire Wire Line
+	1450 2700 1800 2700
+Connection ~ 1800 2700
+Wire Wire Line
+	1800 2700 2200 2700
+Wire Wire Line
+	1450 3000 1800 3000
+Connection ~ 1800 3000
+Wire Wire Line
+	1800 3000 2200 3000
+Text HLabel 3900 4100 2    50   Input ~ 0
+SCK
+Text HLabel 2700 4300 0    50   Input ~ 0
+MISO
+Text HLabel 3900 4900 2    50   Input ~ 0
+MOSI
+Text HLabel 3900 4300 2    50   Input ~ 0
+CS
+Text HLabel 3900 4200 2    50   Input ~ 0
+DO0
+Text HLabel 2700 4400 0    50   Input ~ 0
+DO2
+Wire Wire Line
+	3900 4500 4450 4500
+Wire Wire Line
+	4300 4400 4300 4300
+Wire Wire Line
+	3900 4400 4300 4400
+$Comp
+L Connector:Conn_01x01_Female J13
+U 1 1 5BA7B519
+P 9250 3500
+F 0 "J13" V 9190 3412 50  0000 R CNN
+F 1 "Antenna" V 9099 3412 50  0000 R CNN
+F 2 "Connectors:1X01" H 9250 3500 50  0001 C CNN
+F 3 "~" H 9250 3500 50  0001 C CNN
+F 4 "Tranceiver" H 0   0   50  0001 C CNN "Functional Block"
+	1    9250 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 3800 9250 3800
+Wire Wire Line
+	9250 3700 9250 3800
+$EndSCHEMATC

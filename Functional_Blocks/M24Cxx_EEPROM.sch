@@ -1,0 +1,130 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:M24Cxx IC1
+U 1 1 5B70FADB
+P 5150 3900
+F 0 "IC1" H 5300 3700 50  0000 C CNN
+F 1 "M24Cxx" H 5350 4150 50  0000 C CNN
+F 2 "digikey-footprints:TSSOP-8_W4.4mm" H 5150 3900 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/DM00071904.pdf" H 5150 4336 50  0001 C CNN
+F 4 "M24C64-RDW6TP" H 0   0   50  0001 C CNN "MPN"
+F 5 "STMicroelectronics" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "EEPROM" H 5150 3900 50  0001 C CNN "Functional Block"
+	1    5150 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR069
+U 1 1 5B70FAE2
+P 5150 3500
+F 0 "#PWR069" H 5150 3350 50  0001 C CNN
+F 1 "+3.3V" H 5165 3673 50  0000 C CNN
+F 2 "" H 5150 3500 50  0001 C CNN
+F 3 "" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3500 5150 3550
+$Comp
+L power:GND #PWR070
+U 1 1 5B70FAE9
+P 5150 4400
+F 0 "#PWR070" H 5150 4150 50  0001 C CNN
+F 1 "GND" H 5000 4350 50  0000 C CNN
+F 2 "" H 5150 4400 50  0001 C CNN
+F 3 "" H 5150 4400 50  0001 C CNN
+	1    5150 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4300 5150 4400
+$Comp
+L power:GND #PWR068
+U 1 1 5B70FAF0
+P 4700 4200
+F 0 "#PWR068" H 4700 3950 50  0001 C CNN
+F 1 "GND" H 4550 4150 50  0000 C CNN
+F 2 "" H 4700 4200 50  0001 C CNN
+F 3 "" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4200 4700 4100
+Wire Wire Line
+	4700 3750 4750 3750
+Wire Wire Line
+	4750 3850 4700 3850
+Connection ~ 4700 3850
+Wire Wire Line
+	4700 3850 4700 3750
+Wire Wire Line
+	4750 3950 4700 3950
+Connection ~ 4700 3950
+Wire Wire Line
+	4700 3950 4700 3850
+Wire Wire Line
+	4750 4100 4700 4100
+Connection ~ 4700 4100
+Wire Wire Line
+	4700 4100 4700 3950
+$Comp
+L Device:C_Small C20
+U 1 1 5B70FB03
+P 5950 3900
+F 0 "C20" H 6042 3946 50  0000 L CNN
+F 1 "0.1uF" H 6042 3855 50  0000 L CNN
+F 2 "Capacitors:0603" H 5950 3900 50  0001 C CNN
+F 3 "~" H 5950 3900 50  0001 C CNN
+F 4 "EEPROM" H 5950 3900 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    5950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR071
+U 1 1 5B70FB0A
+P 5950 3750
+F 0 "#PWR071" H 5950 3600 50  0001 C CNN
+F 1 "+3.3V" H 5965 3923 50  0000 C CNN
+F 2 "" H 5950 3750 50  0001 C CNN
+F 3 "" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR072
+U 1 1 5B70FB10
+P 5950 4050
+F 0 "#PWR072" H 5950 3800 50  0001 C CNN
+F 1 "GND" H 5800 4000 50  0000 C CNN
+F 2 "" H 5950 4050 50  0001 C CNN
+F 3 "" H 5950 4050 50  0001 C CNN
+	1    5950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3750 5950 3800
+Wire Wire Line
+	5950 4000 5950 4050
+Text HLabel 5550 3800 2    50   Input ~ 0
+SDA
+Text HLabel 5550 3950 2    50   Input ~ 0
+SCL
+$EndSCHEMATC

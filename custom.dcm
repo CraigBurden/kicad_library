@@ -1,0 +1,70 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AC1020
+F https://www.promelec.ru/pdf/AC-1020_Jun-06.pdf
+$ENDCMP
+#
+$CMP AD8293Gxx
+D Zero-drift, Instrumentation Amplifier with filter and Fixed Gain
+K Instrumentation, Amplifier
+$ENDCMP
+#
+$CMP ADuM5211
+D Dual-Channel Isolator with Integrated DC-to-DC Converter
+$ENDCMP
+#
+$CMP BQ24040
+D 1A, Single-Input, Single Cell Li-Ion and Li-Pol Battery Charger With Auto Start
+$ENDCMP
+#
+$CMP CURRENT_TRANSFORMER
+D Current transformer
+$ENDCMP
+#
+$CMP FXLN83xxQ
+D  3-Axis LowPower Analog-Output Accelerometer
+$ENDCMP
+#
+$CMP JSN-SR04T
+D Waterproof Ultrasonic Proximity Sensor
+K Ultrasonic waterproof
+$ENDCMP
+#
+$CMP LTC4079
+D 60V, 250mA Linear Charger with Low Quiescent Current
+$ENDCMP
+#
+$CMP M24Cxx
+D M24Cxx Serial I²C bus EEPROM
+K Serial I²C EEPROM
+F https://www.st.com/resource/en/datasheet/DM00071904.pdf
+$ENDCMP
+#
+$CMP M90E26
+D Single-Phase High-Performance Wide-Span Energy Metering IC
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-46002-SE-M90E26-Datasheet.pdf
+$ENDCMP
+#
+$CMP MPX53xP
+D Differential/Vented Gauge Pressure Transducer
+K Pressure Differential Vented Gauge
+$ENDCMP
+#
+$CMP PIC32MMxxxxGPM028
+D PIC32MMxxxxGPM028 28-pin QFN/UQFN
+K PIC32 PIC32MM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/60001387c.pdf
+$ENDCMP
+#
+$CMP PIC32MMxxxxGPM036
+D PIC32MMxxxxGPM036 36-pin QFN/UQFN
+K PIC32 PIC32MM
+F http://ww1.microchip.com/downloads/en/DeviceDoc/60001387c.pdf
+$ENDCMP
+#
+$CMP TPS63070
+D 2-V to 16-V Buck-Boost Converter With 3.6-A Switch Current
+K Buck-Boost Switch
+$ENDCMP
+#
+#End Doc Library

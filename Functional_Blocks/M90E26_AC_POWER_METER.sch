@@ -1,0 +1,1429 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:M90E26 U3
+U 1 1 5B8BB772
+P 5500 3850
+F 0 "U3" H 5525 4765 50  0000 C CNN
+F 1 "M90E26" H 5525 4674 50  0000 C CNN
+F 2 "digikey-footprints:SSOP-28_W5.30mm" H 4850 3950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-46002-SE-M90E26-Datasheet.pdf" H 4850 3950 50  0001 C CNN
+F 4 "ATM90E26-YU-R" H 0   0   50  0001 C CNN "MPN"
+F 5 "Microchip Technology" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "AC Power Measurement" H 5500 3850 50  0001 C CNN "Functional Block"
+	1    5500 3850
+	1    0    0    -1  
+$EndComp
+Text Label 2950 5200 0    50   ~ 0
+I1P
+Text Label 4850 4100 2    50   ~ 0
+I1P
+Text Label 4850 4200 2    50   ~ 0
+I1N
+$Comp
+L Device:C_Small C31
+U 1 1 5B8BEC34
+P 4500 4550
+F 0 "C31" H 4592 4596 50  0000 L CNN
+F 1 "10nF" H 4592 4505 50  0000 L CNN
+F 2 "Capacitors:0603" H 4500 4550 50  0001 C CNN
+F 3 "~" H 4500 4550 50  0001 C CNN
+F 4 "AC Power Measurement" H 4500 4550 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    4500 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5B8BEC6E
+P 4200 4550
+F 0 "C29" H 4292 4596 50  0000 L CNN
+F 1 "1uF" H 4292 4505 50  0000 L CNN
+F 2 "Capacitors:0603" H 4200 4550 50  0001 C CNN
+F 3 "~" H 4200 4550 50  0001 C CNN
+F 4 "AC Power Measurement" H 4200 4550 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    4200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4500 4800 4500
+Wire Wire Line
+	4800 4500 4800 4700
+Wire Wire Line
+	4200 4650 4200 4700
+Wire Wire Line
+	4200 4700 4500 4700
+Connection ~ 4800 4700
+Wire Wire Line
+	4800 4700 4800 4750
+Wire Wire Line
+	4500 4650 4500 4700
+Connection ~ 4500 4700
+Wire Wire Line
+	4500 4700 4800 4700
+Wire Wire Line
+	4200 4450 4200 4400
+Wire Wire Line
+	4200 4400 4500 4400
+Wire Wire Line
+	4500 4450 4500 4400
+Connection ~ 4500 4400
+Wire Wire Line
+	4500 4400 4850 4400
+Wire Wire Line
+	4700 4000 4850 4000
+$Comp
+L Device:C_Small C28
+U 1 1 5B8C1552
+P 4150 3700
+F 0 "C28" H 4242 3746 50  0000 L CNN
+F 1 "100nF" H 4242 3655 50  0000 L CNN
+F 2 "Capacitors:0603" H 4150 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+F 4 "AC Power Measurement" H 4150 3700 50  0001 C CNN "Functional Block"
+F 5 "X7R" H -250 0   50  0001 C CNN "Dielectric"
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3800 4500 3700
+Wire Wire Line
+	4500 3700 4850 3700
+Wire Wire Line
+	4150 3800 4500 3800
+$Comp
+L Device:R_Small R37
+U 1 1 5B8C1E64
+P 4000 3600
+F 0 "R37" V 3900 3600 50  0000 C CNN
+F 1 "0R" V 4100 3600 50  0000 C CNN
+F 2 "Resistors:0603" H 4000 3600 50  0001 C CNN
+F 3 "~" H 4000 3600 50  0001 C CNN
+F 4 "AC Power Measurement" H 4000 3600 50  0001 C CNN "Functional Block"
+	1    4000 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3600 4150 3600
+Connection ~ 4150 3600
+Wire Wire Line
+	4150 3600 4850 3600
+$Comp
+L Device:C_Small C30
+U 1 1 5B8C40C4
+P 4250 3300
+F 0 "C30" H 4342 3346 50  0000 L CNN
+F 1 "100nF" H 4342 3255 50  0000 L CNN
+F 2 "Capacitors:0603" H 4250 3300 50  0001 C CNN
+F 3 "~" H 4250 3300 50  0001 C CNN
+F 4 "AC Power Measurement" H 4250 3300 50  0001 C CNN "Functional Block"
+F 5 "X7R" H -250 0   50  0001 C CNN "Dielectric"
+	1    4250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C27
+U 1 1 5B8C4122
+P 3900 3300
+F 0 "C27" H 4000 3350 50  0000 L CNN
+F 1 "10uF" H 4000 3250 50  0000 L CNN
+F 2 "Capacitors:0805" H 3900 3300 50  0001 C CNN
+F 3 "~" H 3900 3300 50  0001 C CNN
+F 4 "AC Power Measurement" H 3900 3300 50  0001 C CNN "Functional Block"
+F 5 "X7R" H -250 0   50  0001 C CNN "Dielectric"
+	1    3900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3400 4250 3400
+Wire Wire Line
+	4250 3400 4750 3400
+Connection ~ 4250 3400
+Wire Wire Line
+	3900 3200 4250 3200
+Wire Wire Line
+	4250 3200 4450 3200
+Wire Wire Line
+	4450 3200 4450 3300
+Wire Wire Line
+	4450 3300 4850 3300
+Connection ~ 4250 3200
+Wire Wire Line
+	3900 3600 3750 3600
+Wire Wire Line
+	3750 3600 3750 3400
+Wire Wire Line
+	3750 3400 3900 3400
+Connection ~ 3900 3400
+Wire Wire Line
+	3700 3400 3750 3400
+Connection ~ 3750 3400
+Wire Wire Line
+	4850 3500 4750 3500
+Wire Wire Line
+	4750 3500 4750 3400
+Connection ~ 4750 3400
+Wire Wire Line
+	4750 3400 4850 3400
+$Comp
+L Device:Crystal Y?
+U 1 1 5B8C8BDE
+P 6850 3750
+AR Path="/5B8050A7/5B8C8BDE" Ref="Y?"  Part="1" 
+AR Path="/5B8BB63D/5B8C8BDE" Ref="Y1"  Part="1" 
+AR Path="/5C42F72D/5B8C8BDE" Ref="Y?"  Part="1" 
+F 0 "Y1" V 6804 3881 50  0000 L CNN
+F 1 "8.192MHz" V 6895 3881 50  0000 L CNN
+F 2 "Clocks:HC49UP" H 6850 3750 50  0001 C CNN
+F 3 "~" H 6850 3750 50  0001 C CNN
+F 4 "AC Power Measurement" H 6850 3750 50  0001 C CNN "Functional Block"
+	1    6850 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3700 6700 3700
+Wire Wire Line
+	6700 3700 6700 3600
+Wire Wire Line
+	6700 3600 6850 3600
+Wire Wire Line
+	6200 3800 6700 3800
+Wire Wire Line
+	6700 3800 6700 3900
+Wire Wire Line
+	6700 3900 6850 3900
+$Comp
+L Device:C_Small C33
+U 1 1 5B8CA908
+P 7200 3600
+F 0 "C33" V 6971 3600 50  0000 C CNN
+F 1 "12pF" V 7062 3600 50  0000 C CNN
+F 2 "Capacitors:0603" H 7200 3600 50  0001 C CNN
+F 3 "~" H 7200 3600 50  0001 C CNN
+F 4 "AC Power Measurement" H 7200 3600 50  0001 C CNN "Functional Block"
+F 5 "C0G" H 0   0   50  0001 C CNN "Dielectric"
+	1    7200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5B8CA989
+P 7200 3900
+F 0 "C34" V 7300 3900 50  0000 C CNN
+F 1 "12pF" V 7400 3900 50  0000 C CNN
+F 2 "Capacitors:0603" H 7200 3900 50  0001 C CNN
+F 3 "~" H 7200 3900 50  0001 C CNN
+F 4 "AC Power Measurement" H 7200 3900 50  0001 C CNN "Functional Block"
+F 5 "C0G" H 0   0   50  0001 C CNN "Dielectric"
+	1    7200 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 3900 6850 3900
+Connection ~ 6850 3900
+Wire Wire Line
+	7100 3600 6850 3600
+Connection ~ 6850 3600
+Wire Wire Line
+	7300 3600 7350 3600
+Wire Wire Line
+	7300 3900 7350 3900
+$Comp
+L Device:C_Small C32
+U 1 1 5B8CE587
+P 6250 4650
+F 0 "C32" H 6342 4696 50  0000 L CNN
+F 1 "33nF" H 6342 4605 50  0000 L CNN
+F 2 "Capacitors:0603" H 6250 4650 50  0001 C CNN
+F 3 "~" H 6250 4650 50  0001 C CNN
+F 4 "AC Power Measurement" H 6250 4650 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    6250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4500 6250 4550
+$Comp
+L Device:R_Small R46
+U 1 1 5B8CF39C
+P 6600 4650
+F 0 "R46" H 6659 4696 50  0000 L CNN
+F 1 "1k" H 6659 4605 50  0000 L CNN
+F 2 "Resistors:0603" H 6600 4650 50  0001 C CNN
+F 3 "~" H 6600 4650 50  0001 C CNN
+F 4 "AC Power Measurement" H 6600 4650 50  0001 C CNN "Functional Block"
+	1    6600 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4500 6600 4500
+Wire Wire Line
+	6600 4500 6600 4550
+Connection ~ 6250 4500
+Wire Wire Line
+	6250 4750 6250 4800
+Wire Wire Line
+	6250 4800 6600 4800
+Wire Wire Line
+	6600 4800 6600 4750
+Wire Wire Line
+	4750 4300 4850 4300
+Text HLabel 9600 1550 2    50   Output ~ 0
+UART_TX
+Wire Wire Line
+	6200 4200 7400 4200
+$Comp
+L Device:R_Small R51
+U 1 1 5B8D784A
+P 7900 4200
+F 0 "R51" V 7704 4200 50  0000 C CNN
+F 1 "1k" V 7795 4200 50  0000 C CNN
+F 2 "Resistors:0603" H 7900 4200 50  0001 C CNN
+F 3 "~" H 7900 4200 50  0001 C CNN
+F 4 "AC Power Measurement" H 7900 4200 50  0001 C CNN "Functional Block"
+	1    7900 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 4200 7800 4200
+Wire Wire Line
+	8000 4200 8050 4200
+Wire Wire Line
+	8050 4200 8050 4250
+$Comp
+L power:GNDPWR #PWR0100
+U 1 1 5B8DB851
+P 4800 4750
+F 0 "#PWR0100" H 4800 4550 50  0001 C CNN
+F 1 "GNDPWR" H 4804 4596 50  0000 C CNN
+F 2 "" H 4800 4700 50  0001 C CNN
+F 3 "" H 4800 4700 50  0001 C CNN
+	1    4800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR098
+U 1 1 5B8DB8EC
+P 4700 4000
+F 0 "#PWR098" H 4700 3800 50  0001 C CNN
+F 1 "GNDPWR" V 4704 3891 50  0000 R CNN
+F 2 "" H 4700 3950 50  0001 C CNN
+F 3 "" H 4700 3950 50  0001 C CNN
+	1    4700 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0106
+U 1 1 5B8DCCC0
+P 6600 4800
+F 0 "#PWR0106" H 6600 4600 50  0001 C CNN
+F 1 "GNDPWR" H 6604 4646 50  0000 C CNN
+F 2 "" H 6600 4750 50  0001 C CNN
+F 3 "" H 6600 4750 50  0001 C CNN
+	1    6600 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 4800
+$Comp
+L power:GNDPWR #PWR0112
+U 1 1 5B8DCD6A
+P 8050 4250
+F 0 "#PWR0112" H 8050 4050 50  0001 C CNN
+F 1 "GNDPWR" H 8054 4096 50  0000 C CNN
+F 2 "" H 8050 4200 50  0001 C CNN
+F 3 "" H 8050 4200 50  0001 C CNN
+	1    8050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0109
+U 1 1 5B8DCDC9
+P 7350 3900
+F 0 "#PWR0109" H 7350 3700 50  0001 C CNN
+F 1 "GNDPWR" V 7355 3792 50  0000 R CNN
+F 2 "" H 7350 3850 50  0001 C CNN
+F 3 "" H 7350 3850 50  0001 C CNN
+	1    7350 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0108
+U 1 1 5B8DCEB2
+P 7350 3600
+F 0 "#PWR0108" H 7350 3400 50  0001 C CNN
+F 1 "GNDPWR" V 7355 3492 50  0000 R CNN
+F 2 "" H 7350 3550 50  0001 C CNN
+F 3 "" H 7350 3550 50  0001 C CNN
+	1    7350 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR0103
+U 1 1 5B8DD572
+P 6250 3500
+F 0 "#PWR0103" H 6250 3300 50  0001 C CNN
+F 1 "GNDPWR" V 6255 3392 50  0000 R CNN
+F 2 "" H 6250 3450 50  0001 C CNN
+F 3 "" H 6250 3450 50  0001 C CNN
+	1    6250 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 3500 6250 3500
+Wire Wire Line
+	6200 3600 6250 3600
+$Comp
+L Jumper:SolderJumper_3_Open JP2
+U 1 1 5B8E1328
+P 6250 2750
+F 0 "JP2" H 6250 2955 50  0000 C CNN
+F 1 "MMD0" H 6250 2864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6250 2750 50  0001 C CNN
+F 3 "~" H 6250 2750 50  0001 C CNN
+F 4 "N/A" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "AC Power Measurement" H 6250 2750 50  0001 C CNN "Functional Block"
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5B8E1386
+P 4800 2750
+F 0 "JP1" H 4800 2955 50  0000 C CNN
+F 1 "MMD1" H 4800 2864 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4800 2750 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+F 4 "N/A" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "AC Power Measurement" H 4800 2750 50  0001 C CNN "Functional Block"
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3200 4850 3200
+Wire Wire Line
+	6250 3200 6200 3200
+$Comp
+L power:GNDPWR #PWR0105
+U 1 1 5B8E3DCA
+P 6500 2850
+F 0 "#PWR0105" H 6500 2650 50  0001 C CNN
+F 1 "GNDPWR" H 6504 2696 50  0000 C CNN
+F 2 "" H 6500 2800 50  0001 C CNN
+F 3 "" H 6500 2800 50  0001 C CNN
+	1    6500 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR0101
+U 1 1 5B8E3E1A
+P 5050 2850
+F 0 "#PWR0101" H 5050 2650 50  0001 C CNN
+F 1 "GNDPWR" H 5054 2696 50  0000 C CNN
+F 2 "" H 5050 2800 50  0001 C CNN
+F 3 "" H 5050 2800 50  0001 C CNN
+	1    5050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2900 4800 3200
+Wire Wire Line
+	6250 2900 6250 3200
+Wire Wire Line
+	6450 2750 6500 2750
+Wire Wire Line
+	6500 2750 6500 2850
+Wire Wire Line
+	6050 2750 6000 2750
+Wire Wire Line
+	6000 2750 6000 2550
+Wire Wire Line
+	4600 2750 4550 2750
+Wire Wire Line
+	4550 2750 4550 2550
+Wire Wire Line
+	5000 2750 5050 2750
+Wire Wire Line
+	5050 2750 5050 2850
+Text HLabel 1400 6050 0    50   BiDi ~ 0
+AC_NEUTRAL_IN
+$Comp
+L power:GNDPWR #PWR084
+U 1 1 5B8F3C19
+P 1650 4500
+F 0 "#PWR084" H 1650 4300 50  0001 C CNN
+F 1 "GNDPWR" V 1655 4392 50  0000 R CNN
+F 2 "" H 1650 4450 50  0001 C CNN
+F 3 "" H 1650 4450 50  0001 C CNN
+	1    1650 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R40
+U 1 1 5B8F61AF
+P 5000 5600
+F 0 "R40" H 4941 5554 50  0000 R CNN
+F 1 "120k" H 4941 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 5000 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 5000 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 5000 5600 50  0001 C CNN "Functional Block"
+	1    5000 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 5750 5000 5700
+Wire Wire Line
+	5000 5500 5000 5450
+Wire Wire Line
+	5000 5450 5300 5450
+Wire Wire Line
+	5300 5450 5300 5500
+Wire Wire Line
+	5300 5700 5300 5750
+Wire Wire Line
+	5300 5750 5600 5750
+Wire Wire Line
+	5600 5750 5600 5700
+Wire Wire Line
+	5600 5500 5600 5450
+Wire Wire Line
+	5600 5450 5900 5450
+Wire Wire Line
+	5900 5450 5900 5500
+Wire Wire Line
+	5900 5700 5900 5750
+Wire Wire Line
+	5900 5750 6200 5750
+Wire Wire Line
+	6200 5750 6200 5700
+Wire Wire Line
+	6200 5500 6200 5450
+Wire Wire Line
+	6200 5450 6500 5450
+Wire Wire Line
+	6500 5450 6500 5500
+Wire Wire Line
+	6500 5700 6500 5750
+Wire Wire Line
+	6500 5750 6800 5750
+Wire Wire Line
+	6800 5750 6800 5700
+Wire Wire Line
+	6800 5500 6800 5450
+Wire Wire Line
+	6800 5450 7100 5450
+Wire Wire Line
+	7100 5450 7100 5500
+$Comp
+L power:GNDPWR #PWR0107
+U 1 1 5B90D935
+P 7100 5850
+F 0 "#PWR0107" H 7100 5650 50  0001 C CNN
+F 1 "GNDPWR" H 7104 5696 50  0000 C CNN
+F 2 "" H 7100 5800 50  0001 C CNN
+F 3 "" H 7100 5800 50  0001 C CNN
+	1    7100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5850 7100 5750
+$Comp
+L Device:C_Small C35
+U 1 1 5B916139
+P 7400 5600
+F 0 "C35" H 7492 5646 50  0000 L CNN
+F 1 "33nF" H 7492 5555 50  0000 L CNN
+F 2 "Capacitors:0603" H 7400 5600 50  0001 C CNN
+F 3 "~" H 7400 5600 50  0001 C CNN
+F 4 "AC Power Measurement" H 7400 5600 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    7400 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5700 7400 5750
+Wire Wire Line
+	7400 5750 7100 5750
+Connection ~ 7100 5750
+Wire Wire Line
+	7100 5750 7100 5700
+Wire Wire Line
+	7100 5450 7400 5450
+Wire Wire Line
+	7400 5450 7400 5500
+Connection ~ 7100 5450
+Text Label 7400 5450 0    50   ~ 0
+AC_VOLTAGE_SENSE
+Text Label 4800 5750 2    50   ~ 0
+AC_NEUTRAL_IN
+$Comp
+L power:+3.3VP #PWR097
+U 1 1 5B8C0E82
+P 4550 2550
+F 0 "#PWR097" H 4700 2500 50  0001 C CNN
+F 1 "+3.3VP" H 4570 2693 50  0000 C CNN
+F 2 "" H 4550 2550 50  0001 C CNN
+F 3 "" H 4550 2550 50  0001 C CNN
+	1    4550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR099
+U 1 1 5B8C12FA
+P 4750 4300
+F 0 "#PWR099" H 4900 4250 50  0001 C CNN
+F 1 "+3.3VP" V 4770 4398 50  0000 L CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3VP #PWR0102
+U 1 1 5B8C13B0
+P 6000 2550
+F 0 "#PWR0102" H 6150 2500 50  0001 C CNN
+F 1 "+3.3VP" H 6020 2693 50  0000 C CNN
+F 2 "" H 6000 2550 50  0001 C CNN
+F 3 "" H 6000 2550 50  0001 C CNN
+	1    6000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VP #PWR0104
+U 1 1 5B8C13FF
+P 6250 3600
+F 0 "#PWR0104" H 6400 3550 50  0001 C CNN
+F 1 "+3.3VP" V 6270 3698 50  0000 L CNN
+F 2 "" H 6250 3600 50  0001 C CNN
+F 3 "" H 6250 3600 50  0001 C CNN
+	1    6250 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VP #PWR092
+U 1 1 5B8C2363
+P 3700 3400
+F 0 "#PWR092" H 3850 3350 50  0001 C CNN
+F 1 "+3.3VP" V 3720 3498 50  0000 L CNN
+F 2 "" H 3700 3400 50  0001 C CNN
+F 3 "" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	0    -1   -1   0   
+$EndComp
+Text Label 6200 3400 0    50   ~ 0
+UART_TX_ISO
+Text Label 6200 3300 0    50   ~ 0
+UART_RX_ISO
+Text Label 8200 1650 2    50   ~ 0
+UART_RX_ISO
+Text Label 8200 1550 2    50   ~ 0
+UART_TX_ISO
+Text HLabel 9750 2300 2    50   Input ~ 0
+ISO_GND
+Text HLabel 10400 950  2    50   Input ~ 0
+ISO_VCC
+$Comp
+L SparkFun-LED:LED-BLUE0603 D?
+U 1 1 5B995C12
+P 7500 4200
+AR Path="/5B995C12" Ref="D?"  Part="1" 
+AR Path="/5B8BB63D/5B995C12" Ref="D13"  Part="1" 
+AR Path="/5C42F72D/5B995C12" Ref="D?"  Part="1" 
+F 0 "D13" H 7650 4200 50  0000 R CNN
+F 1 "KWH" H 7750 4100 50  0000 R CNN
+F 2 "LED:LED-0603" H 7500 4200 50  0001 C CNN
+F 3 "~" H 7500 4200 50  0001 C CNN
+F 4 "AC Power Measurement" H 7500 4200 50  0001 C CNN "Functional Block"
+	1    7500 4200
+	0    -1   -1   0   
+$EndComp
+Text HLabel 9600 1650 2    50   Input ~ 0
+UART_RX
+$Comp
+L Device:R_Small R41
+U 1 1 5B9C191C
+P 5300 5600
+F 0 "R41" H 5241 5554 50  0000 R CNN
+F 1 "120k" H 5241 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 5300 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 5300 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 5300 5600 50  0001 C CNN "Functional Block"
+	1    5300 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 5B9C198C
+P 5600 5600
+F 0 "R42" H 5541 5554 50  0000 R CNN
+F 1 "120k" H 5541 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 5600 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 5600 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 5600 5600 50  0001 C CNN "Functional Block"
+	1    5600 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R43
+U 1 1 5B9C19FA
+P 5900 5600
+F 0 "R43" H 5841 5554 50  0000 R CNN
+F 1 "120k" H 5841 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 5900 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 5900 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 5900 5600 50  0001 C CNN "Functional Block"
+	1    5900 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R44
+U 1 1 5B9C1A6A
+P 6200 5600
+F 0 "R44" H 6141 5554 50  0000 R CNN
+F 1 "120k" H 6141 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 6200 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 6200 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 6200 5600 50  0001 C CNN "Functional Block"
+	1    6200 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R45
+U 1 1 5B9C1ADC
+P 6500 5600
+F 0 "R45" H 6441 5554 50  0000 R CNN
+F 1 "120k" H 6441 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 6500 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 6500 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 6500 5600 50  0001 C CNN "Functional Block"
+	1    6500 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R47
+U 1 1 5B9C1B50
+P 6800 5600
+F 0 "R47" H 6741 5554 50  0000 R CNN
+F 1 "120k" H 6741 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 6800 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 6800 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1203V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 6800 5600 50  0001 C CNN "Functional Block"
+	1    6800 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R48
+U 1 1 5B9C24F8
+P 7100 5600
+F 0 "R48" H 7041 5554 50  0000 R CNN
+F 1 "1k" H 7041 5645 50  0000 R CNN
+F 2 "Resistors:0805" H 7100 5600 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDM0000/AOA0000C328.pdf" H 7100 5600 50  0001 C CNN
+F 4 "ERJ-PB6D1001V" H 0   0   50  0001 C CNN "MPN"
+F 5 "AC Power Measurement" H 7100 5600 50  0001 C CNN "Functional Block"
+	1    7100 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDPWR #PWR094
+U 1 1 5BAEA22E
+P 4000 3800
+F 0 "#PWR094" H 4000 3600 50  0001 C CNN
+F 1 "GNDPWR" V 4004 3691 50  0000 R CNN
+F 2 "" H 4000 3750 50  0001 C CNN
+F 3 "" H 4000 3750 50  0001 C CNN
+	1    4000 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDPWR #PWR093
+U 1 1 5BAEA295
+P 3800 3200
+F 0 "#PWR093" H 3800 3000 50  0001 C CNN
+F 1 "GNDPWR" V 3804 3091 50  0000 R CNN
+F 2 "" H 3800 3150 50  0001 C CNN
+F 3 "" H 3800 3150 50  0001 C CNN
+	1    3800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3800 3200 3900 3200
+Connection ~ 3900 3200
+Wire Wire Line
+	4000 3800 4150 3800
+Connection ~ 4150 3800
+Text Label 4300 6850 0    50   ~ 0
+I2N
+Text Label 4850 3800 2    50   ~ 0
+I2P
+Text Label 4850 3900 2    50   ~ 0
+I2N
+Wire Wire Line
+	6200 4500 6250 4500
+Text Label 6200 4400 0    50   ~ 0
+AC_VOLTAGE_SENSE
+Text HLabel 1400 5100 0    50   BiDi ~ 0
+AC_LIVE_OUT
+Text HLabel 1400 6650 0    50   BiDi ~ 0
+AC_NEUTRAL_OUT
+$Comp
+L Device:R_Small R32
+U 1 1 5C45DBBC
+P 1650 4900
+F 0 "R32" H 1709 4946 50  0000 L CNN
+F 1 "0.001R" H 1709 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 1650 4900 50  0001 C CNN
+F 3 "~" H 1650 4900 50  0001 C CNN
+F 4 "1W" H 1650 4900 50  0001 C CNN "Power Rating"
+	1    1650 4900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1400 4700 0    50   BiDi ~ 0
+AC_LIVE_IN
+Wire Wire Line
+	1650 4700 1650 4800
+Wire Wire Line
+	1650 5000 1650 5100
+Wire Wire Line
+	1400 5100 1550 5100
+$Comp
+L Device:R_Small R33
+U 1 1 5C477435
+P 2250 4600
+F 0 "R33" V 2054 4600 50  0000 C CNN
+F 1 "100R" V 2145 4600 50  0000 C CNN
+F 2 "Resistors:0603" H 2250 4600 50  0001 C CNN
+F 3 "~" H 2250 4600 50  0001 C CNN
+	1    2250 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 5C477518
+P 2250 5200
+F 0 "R34" V 2350 5200 50  0000 C CNN
+F 1 "100R" V 2450 5200 50  0000 C CNN
+F 2 "Resistors:0603" H 2250 5200 50  0001 C CNN
+F 3 "~" H 2250 5200 50  0001 C CNN
+	1    2250 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C24
+U 1 1 5C47830E
+P 2550 4750
+F 0 "C24" H 2642 4796 50  0000 L CNN
+F 1 "330nF" H 2642 4705 50  0000 L CNN
+F 2 "Capacitors:0603" H 2550 4750 50  0001 C CNN
+F 3 "~" H 2550 4750 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    2550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C25
+U 1 1 5C4783C9
+P 2550 5050
+F 0 "C25" H 2642 5096 50  0000 L CNN
+F 1 "330nF" H 2642 5005 50  0000 L CNN
+F 2 "Capacitors:0603" H 2550 5050 50  0001 C CNN
+F 3 "~" H 2550 5050 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    2550 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 4600 1650 4600
+Wire Wire Line
+	1650 4600 1650 4700
+Wire Wire Line
+	2150 5200 1650 5200
+Wire Wire Line
+	1650 5200 1650 5100
+Connection ~ 1650 5100
+Wire Wire Line
+	2350 5200 2550 5200
+Wire Wire Line
+	2550 5200 2550 5150
+Wire Wire Line
+	2550 4650 2550 4600
+Wire Wire Line
+	2550 4600 2350 4600
+Wire Wire Line
+	2550 4850 2550 4900
+$Comp
+L power:GNDPWR #PWR087
+U 1 1 5C4A0381
+P 2500 4900
+F 0 "#PWR087" H 2500 4700 50  0001 C CNN
+F 1 "GNDPWR" V 2500 4800 50  0000 R CNN
+F 2 "" H 2500 4850 50  0001 C CNN
+F 3 "" H 2500 4850 50  0001 C CNN
+	1    2500 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 4900 2550 4900
+Connection ~ 2550 4900
+Wire Wire Line
+	2550 4900 2550 4950
+Text Label 2950 4600 0    50   ~ 0
+I1N
+Wire Wire Line
+	2950 5200 2550 5200
+Connection ~ 2550 5200
+Wire Wire Line
+	2950 4600 2550 4600
+Connection ~ 2550 4600
+Wire Wire Line
+	4800 5750 5000 5750
+$Comp
+L custom:ACS722 U2
+U 1 1 5C4ED213
+P 2000 6350
+F 0 "U2" H 1700 6800 50  0000 C CNN
+F 1 "ACS722" H 2000 6350 50  0000 C CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 2000 6350 50  0001 C CNN
+F 3 "" H 2000 6350 50  0001 C CNN
+	1    2000 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6050 1500 6050
+Wire Wire Line
+	1550 6150 1500 6150
+Wire Wire Line
+	1500 6150 1500 6050
+Connection ~ 1500 6050
+Wire Wire Line
+	1500 6050 1400 6050
+Wire Wire Line
+	1550 6550 1500 6550
+Wire Wire Line
+	1500 6550 1500 6650
+Wire Wire Line
+	1500 6650 1400 6650
+Wire Wire Line
+	1550 6650 1500 6650
+Connection ~ 1500 6650
+$Comp
+L power:GNDPWR #PWR086
+U 1 1 5C50F35B
+P 2000 6950
+F 0 "#PWR086" H 2000 6750 50  0001 C CNN
+F 1 "GNDPWR" V 2000 6850 50  0000 R CNN
+F 2 "" H 2000 6900 50  0001 C CNN
+F 3 "" H 2000 6900 50  0001 C CNN
+	1    2000 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6850 2000 6950
+$Comp
+L power:+3.3VP #PWR085
+U 1 1 5C518D1C
+P 2000 5700
+F 0 "#PWR085" H 2150 5650 50  0001 C CNN
+F 1 "+3.3VP" H 2050 5750 50  0000 L CNN
+F 2 "" H 2000 5700 50  0001 C CNN
+F 3 "" H 2000 5700 50  0001 C CNN
+	1    2000 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5700 2000 5800
+$Comp
+L Device:C_Small C23
+U 1 1 5C523762
+P 2500 5800
+F 0 "C23" V 2271 5800 50  0000 C CNN
+F 1 "100nF" V 2362 5800 50  0000 C CNN
+F 2 "Capacitors:0603" H 2500 5800 50  0001 C CNN
+F 3 "~" H 2500 5800 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    2500 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 5800 2000 5800
+Connection ~ 2000 5800
+Wire Wire Line
+	2000 5800 2000 5850
+$Comp
+L power:GNDPWR #PWR089
+U 1 1 5C5351FC
+P 2650 5850
+F 0 "#PWR089" H 2650 5650 50  0001 C CNN
+F 1 "GNDPWR" V 2650 5750 50  0000 R CNN
+F 2 "" H 2650 5800 50  0001 C CNN
+F 3 "" H 2650 5800 50  0001 C CNN
+	1    2650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5800 2650 5800
+Wire Wire Line
+	2650 5800 2650 5850
+$Comp
+L power:GNDPWR #PWR088
+U 1 1 5C53EFE1
+P 2500 6700
+F 0 "#PWR088" H 2500 6500 50  0001 C CNN
+F 1 "GNDPWR" V 2500 6600 50  0000 R CNN
+F 2 "" H 2500 6650 50  0001 C CNN
+F 3 "" H 2500 6650 50  0001 C CNN
+	1    2500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6650 2500 6650
+Wire Wire Line
+	2500 6650 2500 6700
+$Comp
+L Device:C_Small C26
+U 1 1 5C549378
+P 2700 6700
+F 0 "C26" H 2792 6746 50  0000 L CNN
+F 1 "10nF" H 2792 6655 50  0000 L CNN
+F 2 "Capacitors:0603" H 2700 6700 50  0001 C CNN
+F 3 "~" H 2700 6700 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    2700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR090
+U 1 1 5C5493F2
+P 2700 6850
+F 0 "#PWR090" H 2700 6650 50  0001 C CNN
+F 1 "GNDPWR" V 2700 6750 50  0000 R CNN
+F 2 "" H 2700 6800 50  0001 C CNN
+F 3 "" H 2700 6800 50  0001 C CNN
+	1    2700 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6550 2700 6550
+Wire Wire Line
+	2700 6550 2700 6600
+Text Label 3600 6850 0    50   ~ 0
+I2P
+Connection ~ 2700 6550
+Wire Wire Line
+	2700 6800 2700 6850
+$Comp
+L Device:R_Small R38
+U 1 1 5C5CD74C
+P 4000 6650
+F 0 "R38" H 4059 6696 50  0000 L CNN
+F 1 "10k" H 4059 6605 50  0000 L CNN
+F 2 "Resistors:0603" H 4000 6650 50  0001 C CNN
+F 3 "~" H 4000 6650 50  0001 C CNN
+	1    4000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R39
+U 1 1 5C5CD7D6
+P 4000 7050
+F 0 "R39" H 4059 7096 50  0000 L CNN
+F 1 "10k" H 4059 7005 50  0000 L CNN
+F 2 "Resistors:0603" H 4000 7050 50  0001 C CNN
+F 3 "~" H 4000 7050 50  0001 C CNN
+	1    4000 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6750 4000 6850
+Wire Wire Line
+	4000 6850 4300 6850
+Wire Wire Line
+	4000 6950 4000 6850
+Connection ~ 4000 6850
+$Comp
+L power:+3.3VP #PWR095
+U 1 1 5C5E1C79
+P 4000 6500
+F 0 "#PWR095" H 4150 6450 50  0001 C CNN
+F 1 "+3.3VP" H 4050 6550 50  0000 L CNN
+F 2 "" H 4000 6500 50  0001 C CNN
+F 3 "" H 4000 6500 50  0001 C CNN
+	1    4000 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6500 4000 6550
+$Comp
+L power:GNDPWR #PWR096
+U 1 1 5C5EC124
+P 4000 7200
+F 0 "#PWR096" H 4000 7000 50  0001 C CNN
+F 1 "GNDPWR" V 4000 7100 50  0000 R CNN
+F 2 "" H 4000 7150 50  0001 C CNN
+F 3 "" H 4000 7150 50  0001 C CNN
+	1    4000 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 7150 4000 7200
+$Comp
+L Device:R_Small R35
+U 1 1 5C5F9283
+P 3300 6700
+F 0 "R35" H 3359 6746 50  0000 L CNN
+F 1 "10k" H 3359 6655 50  0000 L CNN
+F 2 "Resistors:0603" H 3300 6700 50  0001 C CNN
+F 3 "~" H 3300 6700 50  0001 C CNN
+	1    3300 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 5C5F928A
+P 3300 7000
+F 0 "R36" H 3359 7046 50  0000 L CNN
+F 1 "10k" H 3359 6955 50  0000 L CNN
+F 2 "Resistors:0603" H 3300 7000 50  0001 C CNN
+F 3 "~" H 3300 7000 50  0001 C CNN
+	1    3300 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6800 3300 6850
+Wire Wire Line
+	3300 6850 3600 6850
+Wire Wire Line
+	3300 6900 3300 6850
+Connection ~ 3300 6850
+Wire Wire Line
+	3300 6550 3300 6600
+Wire Wire Line
+	3300 7100 3300 7150
+$Comp
+L power:GNDPWR #PWR091
+U 1 1 5C624DC8
+P 3300 7150
+F 0 "#PWR091" H 3300 6950 50  0001 C CNN
+F 1 "GNDPWR" V 3300 7050 50  0000 R CNN
+F 2 "" H 3300 7100 50  0001 C CNN
+F 3 "" H 3300 7100 50  0001 C CNN
+	1    3300 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6550 3300 6550
+Text HLabel 1650 3300 0    50   BiDi ~ 0
+AC_EARTH_IN
+Text HLabel 1650 3450 0    50   BiDi ~ 0
+AC_EARTH_OUT
+Wire Wire Line
+	1650 3300 1750 3300
+Wire Wire Line
+	1750 3300 1750 3450
+Wire Wire Line
+	1750 3450 1650 3450
+$Comp
+L Device:R_Small R31
+U 1 1 5C4B55D3
+P 1550 4900
+F 0 "R31" H 1609 4946 50  0000 L CNN
+F 1 "0.001R" H 1609 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 1550 4900 50  0001 C CNN
+F 3 "~" H 1550 4900 50  0001 C CNN
+F 4 "1W" H 1550 4900 50  0001 C CNN "Power Rating"
+	1    1550 4900
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1650 4700
+Wire Wire Line
+	1400 4700 1550 4700
+Wire Wire Line
+	1550 5000 1550 5100
+Connection ~ 1550 5100
+Wire Wire Line
+	1550 5100 1650 5100
+Wire Wire Line
+	1550 4800 1550 4700
+Connection ~ 1550 4700
+Wire Wire Line
+	1550 4700 1650 4700
+Wire Wire Line
+	9200 1050 9200 950 
+Wire Wire Line
+	9200 950  9750 950 
+Wire Wire Line
+	9100 1050 9100 950 
+Wire Wire Line
+	9100 950  9200 950 
+Connection ~ 9200 950 
+$Comp
+L power:+3.3VP #PWR0115
+U 1 1 5C56EE14
+P 8650 700
+F 0 "#PWR0115" H 8800 650 50  0001 C CNN
+F 1 "+3.3VP" H 8670 843 50  0000 C CNN
+F 2 "" H 8650 700 50  0001 C CNN
+F 3 "" H 8650 700 50  0001 C CNN
+	1    8650 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2300 9450 2300
+Wire Wire Line
+	9150 2300 9150 2200
+Wire Wire Line
+	9250 2200 9250 2300
+Connection ~ 9250 2300
+Wire Wire Line
+	9250 2300 9150 2300
+Wire Wire Line
+	9350 2200 9350 2300
+Connection ~ 9350 2300
+Wire Wire Line
+	9350 2300 9250 2300
+Wire Wire Line
+	9450 2200 9450 2300
+Connection ~ 9450 2300
+Wire Wire Line
+	9450 2300 9350 2300
+$Comp
+L power:GNDPWR #PWR0114
+U 1 1 5C5B92F5
+P 8200 2400
+F 0 "#PWR0114" H 8200 2200 50  0001 C CNN
+F 1 "GNDPWR" V 8204 2291 50  0000 R CNN
+F 2 "" H 8200 2350 50  0001 C CNN
+F 3 "" H 8200 2350 50  0001 C CNN
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2400 8200 2300
+Wire Wire Line
+	8200 2300 8350 2300
+Wire Wire Line
+	8650 2300 8650 2200
+Wire Wire Line
+	8550 2200 8550 2300
+Connection ~ 8550 2300
+Wire Wire Line
+	8550 2300 8650 2300
+Wire Wire Line
+	8450 2200 8450 2300
+Connection ~ 8450 2300
+Wire Wire Line
+	8450 2300 8550 2300
+Wire Wire Line
+	8350 2200 8350 2300
+Connection ~ 8350 2300
+Wire Wire Line
+	8350 2300 8450 2300
+$Comp
+L Device:R_Small R49
+U 1 1 5C5EB69B
+P 7600 1350
+F 0 "R49" V 7700 1300 50  0000 C CNN
+F 1 "10k" V 7700 1450 50  0000 C CNN
+F 2 "Resistors:0603" H 7600 1350 50  0001 C CNN
+F 3 "~" H 7600 1350 50  0001 C CNN
+	1    7600 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R50
+U 1 1 5C5EB75C
+P 7850 1250
+F 0 "R50" V 7750 1100 50  0000 C CNN
+F 1 "16.9k" V 7750 1300 50  0000 C CNN
+F 2 "Resistors:0603" H 7850 1250 50  0001 C CNN
+F 3 "~" H 7850 1250 50  0001 C CNN
+	1    7850 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C36
+U 1 1 5C5EBA09
+P 8300 800
+F 0 "C36" V 8071 800 50  0000 C CNN
+F 1 "100nF" V 8162 800 50  0000 C CNN
+F 2 "Capacitors:0603" H 8300 800 50  0001 C CNN
+F 3 "~" H 8300 800 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    8300 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C38
+U 1 1 5C5EBB69
+P 9750 1150
+F 0 "C38" H 9842 1196 50  0000 L CNN
+F 1 "10uF" H 9842 1105 50  0000 L CNN
+F 2 "Capacitors:0603" H 9750 1150 50  0001 C CNN
+F 3 "~" H 9750 1150 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    9750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C39
+U 1 1 5C5EBFD4
+P 10100 1150
+F 0 "C39" H 10192 1196 50  0000 L CNN
+F 1 "100nF" H 10192 1105 50  0000 L CNN
+F 2 "Capacitors:0603" H 10100 1150 50  0001 C CNN
+F 3 "~" H 10100 1150 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    10100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1350 7750 1350
+Wire Wire Line
+	7750 1250 7750 1350
+Connection ~ 7750 1350
+$Comp
+L power:GNDPWR #PWR0110
+U 1 1 5C60CE96
+P 7450 1400
+F 0 "#PWR0110" H 7450 1200 50  0001 C CNN
+F 1 "GNDPWR" V 7454 1291 50  0000 R CNN
+F 2 "" H 7450 1350 50  0001 C CNN
+F 3 "" H 7450 1350 50  0001 C CNN
+	1    7450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1400 7450 1350
+Wire Wire Line
+	7450 1350 7500 1350
+Wire Wire Line
+	9750 1050 9750 950 
+Connection ~ 9750 950 
+Wire Wire Line
+	9750 950  10100 950 
+Wire Wire Line
+	10100 1050 10100 950 
+Connection ~ 10100 950 
+Wire Wire Line
+	10100 950  10400 950 
+Text Label 10250 1400 0    50   ~ 0
+ISO_GND
+Wire Wire Line
+	9600 1400 9750 1400
+Wire Wire Line
+	10100 1250 10100 1400
+Connection ~ 10100 1400
+Wire Wire Line
+	10100 1400 10250 1400
+Wire Wire Line
+	9750 1250 9750 1400
+Connection ~ 9750 1400
+Wire Wire Line
+	9750 1400 10100 1400
+Wire Wire Line
+	1650 4500 1650 4600
+Connection ~ 1650 4600
+$Comp
+L custom:ADuM5211 U4
+U 1 1 5C55D7EB
+P 8900 1600
+F 0 "U4" H 9500 2100 50  0000 R CNN
+F 1 "ADuM5211" V 8950 1800 50  0000 R CNN
+F 2 "digikey-footprints:SSOP-20_W5.3mm" H 9650 1600 50  0001 C CNN
+F 3 "" H 9650 1600 50  0001 C CNN
+	1    8900 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1250 8100 1250
+Wire Wire Line
+	8650 700  8650 800 
+$Comp
+L Device:C_Small C37
+U 1 1 5C728E8D
+P 8500 1000
+F 0 "C37" V 8271 1000 50  0000 C CNN
+F 1 "10uF" V 8362 1000 50  0000 C CNN
+F 2 "Capacitors:0603" H 8500 1000 50  0001 C CNN
+F 3 "~" H 8500 1000 50  0001 C CNN
+F 4 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    8500 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 800  8650 800 
+Connection ~ 8650 800 
+Wire Wire Line
+	8650 800  8650 1000
+Wire Wire Line
+	8600 1000 8650 1000
+Connection ~ 8650 1000
+Wire Wire Line
+	8650 1000 8650 1050
+$Comp
+L power:+3.3VP #PWR0113
+U 1 1 5C73C9FF
+P 8100 1200
+F 0 "#PWR0113" H 8250 1150 50  0001 C CNN
+F 1 "+3.3VP" H 8120 1343 50  0000 C CNN
+F 2 "" H 8100 1200 50  0001 C CNN
+F 3 "" H 8100 1200 50  0001 C CNN
+	1    8100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1200 8100 1250
+Connection ~ 8100 1250
+Wire Wire Line
+	8100 1250 8200 1250
+$Comp
+L power:GNDPWR #PWR0111
+U 1 1 5C746B49
+P 7800 850
+F 0 "#PWR0111" H 7800 650 50  0001 C CNN
+F 1 "GNDPWR" H 7700 800 50  0000 R CNN
+F 2 "" H 7800 800 50  0001 C CNN
+F 3 "" H 7800 800 50  0001 C CNN
+	1    7800 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 850  7800 800 
+Wire Wire Line
+	7800 800  8150 800 
+Wire Wire Line
+	8400 1000 8150 1000
+Wire Wire Line
+	8150 1000 8150 800 
+Connection ~ 8150 800 
+Wire Wire Line
+	8150 800  8200 800 
+Wire Wire Line
+	7750 1350 8200 1350
+NoConn ~ 6200 4300
+NoConn ~ 6200 4100
+NoConn ~ 6200 4000
+NoConn ~ 6200 3900
+$EndSCHEMATC

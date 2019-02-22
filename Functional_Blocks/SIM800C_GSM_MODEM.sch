@@ -1,0 +1,607 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF:SIM800C U1
+U 1 1 5B6DC9F0
+P 5900 3500
+F 0 "U1" H 5900 3300 50  0000 C CNN
+F 1 "SIM800C" H 5900 3200 50  0000 C CNN
+F 2 "RF_Module:SIMCom_SIM800C" H 6500 2450 50  0001 C CNN
+F 3 "http://simcom.ee/documents/SIM800C/SIM800C_Hardware_Design_V1.05.pdf" H 1250 1150 50  0001 C CNN
+F 4 "SIM800C" H 0   0   50  0001 C CNN "MPN"
+F 5 "SIMCOM" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GSM" H 5900 3500 50  0001 C CNN "Functional Block"
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+Text HLabel 5100 2900 0    50   BiDi ~ 0
+~UART_CTS
+Text HLabel 5100 3000 0    50   BiDi ~ 0
+~UART_RTS
+Text HLabel 5100 3100 0    50   Output ~ 0
+UART_TX
+Text HLabel 5100 3200 0    50   Input ~ 0
+UART_RX
+NoConn ~ 5100 2800
+NoConn ~ 5100 2700
+NoConn ~ 5100 2600
+NoConn ~ 5100 3400
+NoConn ~ 5100 3500
+NoConn ~ 5100 3900
+NoConn ~ 5100 4300
+NoConn ~ 5100 4400
+NoConn ~ 6700 4300
+NoConn ~ 6700 4400
+NoConn ~ 6700 3800
+NoConn ~ 6700 3700
+NoConn ~ 6700 3600
+NoConn ~ 6700 2700
+NoConn ~ 6700 2800
+Wire Wire Line
+	6100 2300 6100 2400
+$Comp
+L power:GND #PWR059
+U 1 1 5B6DCC94
+P 5900 4700
+F 0 "#PWR059" H 5900 4450 50  0001 C CNN
+F 1 "GND" H 5905 4527 50  0000 C CNN
+F 2 "" H 5900 4700 50  0001 C CNN
+F 3 "" H 5900 4700 50  0001 C CNN
+	1    5900 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4600 5900 4700
+$Comp
+L Device:C_Small C17
+U 1 1 5B6DCD8B
+P 7300 2750
+F 0 "C17" H 7392 2796 50  0000 L CNN
+F 1 "dnp" H 7392 2705 50  0000 L CNN
+F 2 "Capacitors:0402" H 7300 2750 50  0001 C CNN
+F 3 "~" H 7300 2750 50  0001 C CNN
+F 4 "GSM" H 7300 2750 50  0001 C CNN "Functional Block"
+F 5 "C0G" H 0   0   50  0001 C CNN "Dielectric"
+	1    7300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 5B6DCDFE
+P 7600 2600
+F 0 "R24" V 7404 2600 50  0000 C CNN
+F 1 "0R" V 7495 2600 50  0000 C CNN
+F 2 "Resistors:0402" H 7600 2600 50  0001 C CNN
+F 3 "~" H 7600 2600 50  0001 C CNN
+F 4 "GSM" H 7600 2600 50  0001 C CNN "Functional Block"
+	1    7600 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2650 7300 2600
+Connection ~ 7300 2600
+Wire Wire Line
+	7300 2600 7500 2600
+$Comp
+L Device:C_Small C18
+U 1 1 5B6DCE4A
+P 7900 2750
+F 0 "C18" H 7992 2796 50  0000 L CNN
+F 1 "dnp" H 7992 2705 50  0000 L CNN
+F 2 "Capacitors:0402" H 7900 2750 50  0001 C CNN
+F 3 "~" H 7900 2750 50  0001 C CNN
+F 4 "GSM" H 7900 2750 50  0001 C CNN "Functional Block"
+F 5 "C0G" H 0   0   50  0001 C CNN "Dielectric"
+	1    7900 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2600 7900 2600
+Wire Wire Line
+	7900 2600 7900 2650
+Connection ~ 7900 2600
+$Comp
+L power:GND #PWR063
+U 1 1 5B6DD0EC
+P 7300 2950
+F 0 "#PWR063" H 7300 2700 50  0001 C CNN
+F 1 "GND" H 7305 2777 50  0000 C CNN
+F 2 "" H 7300 2950 50  0001 C CNN
+F 3 "" H 7300 2950 50  0001 C CNN
+	1    7300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR064
+U 1 1 5B6DD11A
+P 7900 2950
+F 0 "#PWR064" H 7900 2700 50  0001 C CNN
+F 1 "GND" H 7905 2777 50  0000 C CNN
+F 2 "" H 7900 2950 50  0001 C CNN
+F 3 "" H 7900 2950 50  0001 C CNN
+	1    7900 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2950 7300 2850
+Wire Wire Line
+	7900 2950 7900 2850
+Wire Wire Line
+	6700 2600 7300 2600
+Text Label 6700 3000 0    50   ~ 0
+SIM_VDD
+Text Label 6700 3100 0    50   ~ 0
+SIM_DATA
+Text Label 6700 3200 0    50   ~ 0
+SIM_CLK
+Text Label 6700 3300 0    50   ~ 0
+SIM_RST
+$Comp
+L Connector:SIM_Card J12
+U 1 1 5B6DD586
+P 9900 5350
+F 0 "J12" H 10529 5450 50  0000 L CNN
+F 1 "SIM_Card" H 10529 5359 50  0000 L CNN
+F 2 "custom:MOLEX-786463001" H 9900 5700 50  0001 C CNN
+F 3 " ~" H 9850 5350 50  0001 C CNN
+F 4 "786463001" H 0   0   50  0001 C CNN "MPN"
+F 5 "MOLEX" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GSM" H 9900 5350 50  0001 C CNN "Functional Block"
+	1    9900 5350
+	1    0    0    -1  
+$EndComp
+Text Label 9400 5050 2    50   ~ 0
+SIM_VDD
+Text Label 9400 5150 2    50   ~ 0
+SIM_RST
+Text Label 9400 5250 2    50   ~ 0
+SIM_CLK
+$Comp
+L power:GND #PWR067
+U 1 1 5B6DD715
+P 9100 5350
+F 0 "#PWR067" H 9100 5100 50  0001 C CNN
+F 1 "GND" V 9105 5222 50  0000 R CNN
+F 2 "" H 9100 5350 50  0001 C CNN
+F 3 "" H 9100 5350 50  0001 C CNN
+	1    9100 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 5350 9400 5350
+Text Label 9400 5550 2    50   ~ 0
+SIM_DATA
+NoConn ~ 9400 5450
+NoConn ~ 6700 3400
+$Comp
+L SparkFun-Connectors:U.FL2PIN J11
+U 1 1 5B6F50A4
+P 8350 2600
+F 0 "J11" H 8222 2639 45  0000 R CNN
+F 1 "U.FL2PIN" H 8222 2555 45  0000 R CNN
+F 2 "Connectors:U.FL" H 8350 2850 20  0001 C CNN
+F 3 "" H 8350 2600 50  0001 C CNN
+F 4 "GSM" H 8350 2600 50  0001 C CNN "Functional Block"
+	1    8350 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2600 8150 2600
+$Comp
+L power:GND #PWR065
+U 1 1 5B6F5246
+P 8350 2950
+F 0 "#PWR065" H 8350 2700 50  0001 C CNN
+F 1 "GND" H 8355 2777 50  0000 C CNN
+F 2 "" H 8350 2950 50  0001 C CNN
+F 3 "" H 8350 2950 50  0001 C CNN
+	1    8350 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2800 8350 2950
+$Comp
+L Device:R_Small R22
+U 1 1 5B6F5491
+P 6950 4300
+F 0 "R22" V 6754 4300 50  0000 C CNN
+F 1 "1k" V 6845 4300 50  0000 C CNN
+F 2 "Resistors:0603" H 6950 4300 50  0001 C CNN
+F 3 "~" H 6950 4300 50  0001 C CNN
+F 4 "GSM" H 6950 4300 50  0001 C CNN "Functional Block"
+	1    6950 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 5B6F5506
+P 7250 4300
+F 0 "R23" V 7054 4300 50  0000 C CNN
+F 1 "1k" V 7145 4300 50  0000 C CNN
+F 2 "Resistors:0603" H 7250 4300 50  0001 C CNN
+F 3 "~" H 7250 4300 50  0001 C CNN
+F 4 "GSM" H 7250 4300 50  0001 C CNN "Functional Block"
+	1    7250 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 4100 6950 4100
+Wire Wire Line
+	6950 4100 6950 4200
+Wire Wire Line
+	6700 4000 7250 4000
+Wire Wire Line
+	7250 4000 7250 4200
+Wire Wire Line
+	6950 4400 6950 4500
+Wire Wire Line
+	7250 4400 7250 4500
+$Comp
+L power:GND #PWR061
+U 1 1 5B6F5AC8
+P 6950 4900
+F 0 "#PWR061" H 6950 4650 50  0001 C CNN
+F 1 "GND" H 6955 4727 50  0000 C CNN
+F 2 "" H 6950 4900 50  0001 C CNN
+F 3 "" H 6950 4900 50  0001 C CNN
+	1    6950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR062
+U 1 1 5B6F5AE7
+P 7250 4900
+F 0 "#PWR062" H 7250 4650 50  0001 C CNN
+F 1 "GND" H 7255 4727 50  0000 C CNN
+F 2 "" H 7250 4900 50  0001 C CNN
+F 3 "" H 7250 4900 50  0001 C CNN
+	1    7250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4900 7250 4800
+Wire Wire Line
+	6950 4800 6950 4900
+Text HLabel 5700 2400 1    50   Output ~ 0
+PWR_IND
+Wire Wire Line
+	4450 3900 4450 3700
+Wire Wire Line
+	4450 3700 5100 3700
+$Comp
+L power:GND #PWR058
+U 1 1 5B6F6C22
+P 4450 4500
+F 0 "#PWR058" H 4450 4250 50  0001 C CNN
+F 1 "GND" H 4455 4327 50  0000 C CNN
+F 2 "" H 4450 4500 50  0001 C CNN
+F 3 "" H 4450 4500 50  0001 C CNN
+	1    4450 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4300 4450 4500
+$Comp
+L Device:R_Small R20
+U 1 1 5B6F6F92
+P 3750 4100
+F 0 "R20" V 3554 4100 50  0000 C CNN
+F 1 "47k" V 3645 4100 50  0000 C CNN
+F 2 "Resistors:0603" H 3750 4100 50  0001 C CNN
+F 3 "~" H 3750 4100 50  0001 C CNN
+F 4 "GSM" H 3750 4100 50  0001 C CNN "Functional Block"
+	1    3750 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 5B6F735A
+P 4000 4300
+F 0 "R21" V 3804 4300 50  0000 C CNN
+F 1 "47k" V 3895 4300 50  0000 C CNN
+F 2 "Resistors:0603" H 4000 4300 50  0001 C CNN
+F 3 "~" H 4000 4300 50  0001 C CNN
+F 4 "GSM" H 4000 4300 50  0001 C CNN "Functional Block"
+	1    4000 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5B6F7EE3
+P 5400 1450
+F 0 "C13" H 5492 1496 50  0000 L CNN
+F 1 "1uF" H 5492 1405 50  0000 L CNN
+F 2 "Capacitors:0603" H 5400 1450 50  0001 C CNN
+F 3 "~" H 5400 1450 50  0001 C CNN
+F 4 "GSM" H 5400 1450 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    5400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C14
+U 1 1 5B6F7F3D
+P 5750 1450
+F 0 "C14" H 5842 1496 50  0000 L CNN
+F 1 "10uF" H 5842 1405 50  0000 L CNN
+F 2 "Capacitors:0805" H 5750 1450 50  0001 C CNN
+F 3 "~" H 5750 1450 50  0001 C CNN
+F 4 "GSM" H 5750 1450 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    5750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C15
+U 1 1 5B6F7F77
+P 6100 1450
+F 0 "C15" H 6192 1496 50  0000 L CNN
+F 1 "33pF" H 6192 1405 50  0000 L CNN
+F 2 "Capacitors:0603" H 6100 1450 50  0001 C CNN
+F 3 "~" H 6100 1450 50  0001 C CNN
+F 4 "GSM" H 6100 1450 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    6100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5B6F7FB7
+P 6450 1450
+F 0 "C16" H 6550 1500 50  0000 L CNN
+F 1 "10pF" H 6550 1400 50  0000 L CNN
+F 2 "Capacitors:0603" H 6450 1450 50  0001 C CNN
+F 3 "~" H 6450 1450 50  0001 C CNN
+F 4 "GSM" H 6450 1450 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    6450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C12
+U 1 1 5B6F80AE
+P 5100 1450
+F 0 "C12" H 5188 1496 50  0000 L CNN
+F 1 "100uF" V 5000 1250 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 5100 1450 50  0001 C CNN
+F 3 "~" H 5100 1450 50  0001 C CNN
+F 4 "F930G107MBA" H 0   0   50  0001 C CNN "MPN"
+F 5 "AVX" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GSM" H 5100 1450 50  0001 C CNN "Functional Block"
+F 7 "Tant" H 0   0   50  0001 C CNN "Dielectric"
+	1    5100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom:Zener_AK D4
+U 1 1 5B6F82F5
+P 6800 1450
+F 0 "D4" H 6900 1500 50  0000 L CNN
+F 1 "5.1v" H 6900 1400 50  0000 L CNN
+F 2 "digikey-footprints:SOD-80" V 6800 1450 50  0001 C CNN
+F 3 "~" V 6800 1450 50  0001 C CNN
+F 4 "500mW" H 0   0   50  0001 C CNN "Power Rating"
+F 5 "GSM" H 6800 1450 50  0001 C CNN "Functional Block"
+	1    6800 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 5B6F904D
+P 5950 1700
+F 0 "#PWR060" H 5950 1450 50  0001 C CNN
+F 1 "GND" H 5955 1527 50  0000 C CNN
+F 2 "" H 5950 1700 50  0001 C CNN
+F 3 "" H 5950 1700 50  0001 C CNN
+	1    5950 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1350 5100 1300
+Wire Wire Line
+	5100 1300 5400 1300
+Wire Wire Line
+	5100 1550 5100 1600
+Wire Wire Line
+	5100 1600 5400 1600
+Wire Wire Line
+	5950 1700 5950 1600
+Connection ~ 5950 1600
+Wire Wire Line
+	5950 1600 6100 1600
+Wire Wire Line
+	5950 1200 5950 1300
+Connection ~ 5950 1300
+Wire Wire Line
+	5950 1300 6100 1300
+Wire Wire Line
+	5400 1550 5400 1600
+Connection ~ 5400 1600
+Wire Wire Line
+	5400 1600 5750 1600
+Wire Wire Line
+	5750 1550 5750 1600
+Connection ~ 5750 1600
+Wire Wire Line
+	5750 1600 5950 1600
+Wire Wire Line
+	5750 1350 5750 1300
+Connection ~ 5750 1300
+Wire Wire Line
+	5750 1300 5950 1300
+Wire Wire Line
+	5400 1350 5400 1300
+Connection ~ 5400 1300
+Wire Wire Line
+	5400 1300 5750 1300
+Wire Wire Line
+	6100 1350 6100 1300
+Connection ~ 6100 1300
+Wire Wire Line
+	6100 1300 6450 1300
+Wire Wire Line
+	6100 1550 6100 1600
+Connection ~ 6100 1600
+Wire Wire Line
+	6100 1600 6450 1600
+Wire Wire Line
+	6450 1350 6450 1300
+Connection ~ 6450 1300
+Wire Wire Line
+	6450 1300 6800 1300
+Wire Wire Line
+	6450 1550 6450 1600
+Connection ~ 6450 1600
+Wire Wire Line
+	6450 1600 6800 1600
+Wire Wire Line
+	3850 4100 4000 4100
+Wire Wire Line
+	4000 4200 4000 4100
+Connection ~ 4000 4100
+Wire Wire Line
+	4000 4100 4150 4100
+$Comp
+L power:GND #PWR057
+U 1 1 5B702703
+P 4000 4500
+F 0 "#PWR057" H 4000 4250 50  0001 C CNN
+F 1 "GND" H 4005 4327 50  0000 C CNN
+F 2 "" H 4000 4500 50  0001 C CNN
+F 3 "" H 4000 4500 50  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4400 4000 4500
+Text HLabel 3650 4100 0    50   Input ~ 0
+PWR_KEY
+Text Label 5950 1200 0    50   ~ 0
+POWER
+Text Label 6100 2300 0    50   ~ 0
+POWER
+Text HLabel 5950 1200 0    50   Input ~ 0
+VDD
+$Comp
+L Device:C_Small C19
+U 1 1 5B708C63
+P 8500 5250
+F 0 "C19" H 8592 5296 50  0000 L CNN
+F 1 "0.1uF" H 8592 5205 50  0000 L CNN
+F 2 "Capacitors:0603" H 8500 5250 50  0001 C CNN
+F 3 "~" H 8500 5250 50  0001 C CNN
+F 4 "GSM" H 8500 5250 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 0   0   50  0001 C CNN "Dielectric"
+	1    8500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 5B708D5D
+P 8500 5450
+F 0 "#PWR066" H 8500 5200 50  0001 C CNN
+F 1 "GND" H 8505 5277 50  0000 C CNN
+F 2 "" H 8500 5450 50  0001 C CNN
+F 3 "" H 8500 5450 50  0001 C CNN
+	1    8500 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 5350 8500 5450
+Text Label 8500 5050 2    50   ~ 0
+SIM_VDD
+Wire Wire Line
+	8500 5150 8500 5050
+$Comp
+L SparkFun-LED:LED-BLUE0603 D?
+U 1 1 5BA1AF66
+P 7250 4600
+AR Path="/5BA1AF66" Ref="D?"  Part="1" 
+AR Path="/5B710A44/5BA1AF66" Ref="D6"  Part="1" 
+F 0 "D6" H 7400 4650 50  0000 R CNN
+F 1 "STATUS" H 7550 4550 50  0000 R CNN
+F 2 "LED:LED-0603" H 7250 4600 50  0001 C CNN
+F 3 "" H 7250 4600 50  0001 C CNN
+F 4 "GSM" H 7250 4600 50  0001 C CNN "Functional Block"
+	1    7250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-LED:LED-BLUE0603 D?
+U 1 1 5BA1C47E
+P 6950 4600
+AR Path="/5BA1C47E" Ref="D?"  Part="1" 
+AR Path="/5B710A44/5BA1C47E" Ref="D5"  Part="1" 
+F 0 "D5" H 7100 4650 50  0000 R CNN
+F 1 "NET" H 6900 4650 50  0000 R CNN
+F 2 "LED:LED-0603" H 6950 4600 50  0001 C CNN
+F 3 "" H 6950 4600 50  0001 C CNN
+F 4 "GSM" H 6950 4600 50  0001 C CNN "Functional Block"
+	1    6950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:MMBT4401-7-F Q1
+U 1 1 5BA561A6
+P 4350 4100
+F 0 "Q1" H 4150 4250 60  0000 L CNN
+F 1 "MMBT4401-7-F" V 4550 3750 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 4550 4300 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30039.pdf" H 4550 4400 60  0001 L CNN
+F 4 "MMBT4401-7-F" H 4550 4600 60  0001 L CNN "MPN"
+F 5 "Diodes Incorporated" H 4550 5200 60  0001 L CNN "Manufacturer"
+F 6 "GSM" H 4350 4100 50  0001 C CNN "Functional Block"
+F 7 "MMBT4401-FDICT-ND" H 4550 4500 60  0001 L CNN "Digi-Key_PN"
+F 8 "Discrete Semiconductor Products" H 4550 4700 60  0001 L CNN "Category"
+F 9 "Transistors - Bipolar (BJT) - Single" H 4550 4800 60  0001 L CNN "Family"
+F 10 "https://www.diodes.com/assets/Datasheets/ds30039.pdf" H 4550 4900 60  0001 L CNN "DK_Datasheet_Link"
+F 11 "/product-detail/en/diodes-incorporated/MMBT4401-7-F/MMBT4401-FDICT-ND/775867" H 4550 5000 60  0001 L CNN "DK_Detail_Page"
+F 12 "Active" H 4550 5300 60  0001 L CNN "Status"
+	1    4350 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C72
+U 1 1 5C6DE163
+P 6050 2000
+F 0 "C72" H 6142 2046 50  0000 L CNN
+F 1 "10uF" H 6142 1955 50  0000 L CNN
+F 2 "Capacitors:0805" H 6050 2000 50  0001 C CNN
+F 3 "~" H 6050 2000 50  0001 C CNN
+F 4 "GSM" H 6050 2000 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 300 550 50  0001 C CNN "Dielectric"
+	1    6050 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2000 5900 2000
+Wire Wire Line
+	5900 2000 5900 2400
+$Comp
+L power:GND #PWR0136
+U 1 1 5C6DF013
+P 6250 2000
+F 0 "#PWR0136" H 6250 1750 50  0001 C CNN
+F 1 "GND" H 6255 1827 50  0000 C CNN
+F 2 "" H 6250 2000 50  0001 C CNN
+F 3 "" H 6250 2000 50  0001 C CNN
+	1    6250 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 2000 6250 2000
+$EndSCHEMATC

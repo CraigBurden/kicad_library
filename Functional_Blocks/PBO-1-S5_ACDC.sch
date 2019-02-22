@@ -1,0 +1,247 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:PBO-1-S5 U?
+U 1 1 5B89C377
+P 5600 3550
+F 0 "U?" H 5625 4015 50  0000 C CNN
+F 1 "PBO-1-S5" H 5625 3924 50  0000 C CNN
+F 2 "" H 5700 3500 50  0001 C CNN
+F 3 "" H 5700 3500 50  0001 C CNN
+	1    5600 3550
+	1    0    0    -1  
+$EndComp
+Text HLabel 3600 3750 0    50   Input ~ 0
+AC_LIVE
+Text HLabel 3600 3350 0    50   Input ~ 0
+AC_NEUTRAL
+$Comp
+L Device:Fuse F?
+U 1 1 5B89E3D2
+P 3800 3750
+F 0 "F?" V 4000 3750 50  0000 C CNN
+F 1 "1A/300v" V 3900 3750 50  0000 C CNN
+F 2 "" V 3730 3750 50  0001 C CNN
+F 3 "~" H 3800 3750 50  0001 C CNN
+	1    3800 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 3750 3650 3750
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5B89E56A
+P 4350 3750
+F 0 "TH?" V 4500 3750 50  0000 C CNN
+F 1 "15D-5" V 4600 3800 50  0000 C CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "~" H 4350 3800 50  0001 C CNN
+	1    4350 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Varistor RV?
+U 1 1 5B89E7A4
+P 4100 3550
+F 0 "RV?" H 3850 3600 50  0000 L CNN
+F 1 "S14K350" H 3700 3500 50  0000 L CNN
+F 2 "" V 4030 3550 50  0001 C CNN
+F 3 "~" H 4100 3550 50  0001 C CNN
+	1    4100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3350 4100 3350
+$Comp
+L Device:L_Small L?
+U 1 1 5B89EAE1
+P 4750 3750
+F 0 "L?" V 4935 3750 50  0000 C CNN
+F 1 "1mH" V 4844 3750 50  0000 C CNN
+F 2 "" H 4750 3750 50  0001 C CNN
+F 3 "~" H 4750 3750 50  0001 C CNN
+	1    4750 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 3750 4100 3750
+Wire Wire Line
+	4100 3700 4100 3750
+Connection ~ 4100 3750
+Wire Wire Line
+	4100 3750 4200 3750
+Wire Wire Line
+	4100 3400 4100 3350
+Connection ~ 4100 3350
+Wire Wire Line
+	4100 3350 5100 3350
+Wire Wire Line
+	4500 3750 4650 3750
+Wire Wire Line
+	4850 3750 5100 3750
+Wire Wire Line
+	5100 3750 5100 3450
+$Comp
+L Device:CP1_Small C?
+U 1 1 5B89F565
+P 5650 4300
+F 0 "C?" V 5750 4300 50  0000 C CNN
+F 1 "4.7uF 450V" V 5500 4300 50  0000 C CNN
+F 2 "" H 5650 4300 50  0001 C CNN
+F 3 "~" H 5650 4300 50  0001 C CNN
+	1    5650 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 4300 5550 4050
+Wire Wire Line
+	5550 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 4000
+Wire Wire Line
+	5750 4300 5750 4050
+Wire Wire Line
+	5750 4050 5700 4050
+Wire Wire Line
+	5700 4050 5700 4000
+$Comp
+L Device:C_Small C?
+U 1 1 5B89FD3E
+P 6200 3850
+F 0 "C?" H 6292 3896 50  0000 L CNN
+F 1 "C1nF 400Vac" H 6292 3805 50  0000 L CNN
+F 2 "" H 6200 3850 50  0001 C CNN
+F 3 "~" H 6200 3850 50  0001 C CNN
+	1    6200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3950 6200 4300
+Wire Wire Line
+	6200 4300 5750 4300
+Connection ~ 5750 4300
+Wire Wire Line
+	6200 3750 6200 3650
+Wire Wire Line
+	6200 3450 6150 3450
+$Comp
+L Device:CP1_Small C?
+U 1 1 5B8A00BD
+P 6550 3400
+F 0 "C?" V 6650 3400 50  0000 C CNN
+F 1 "100uF 16V" V 6400 3400 50  0000 C CNN
+F 2 "" H 6550 3400 50  0001 C CNN
+F 3 "~" H 6550 3400 50  0001 C CNN
+	1    6550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C?
+U 1 1 5B8A03BD
+P 7100 3400
+F 0 "C?" V 7200 3400 50  0000 C CNN
+F 1 "68uF 35V" V 6950 3400 50  0000 C CNN
+F 2 "" H 7100 3400 50  0001 C CNN
+F 3 "~" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L?
+U 1 1 5B8A0892
+P 6800 3150
+F 0 "L?" V 6985 3150 50  0000 C CNN
+F 1 "2.2uH" V 6894 3150 50  0000 C CNN
+F 2 "" H 6800 3150 50  0001 C CNN
+F 3 "~" H 6800 3150 50  0001 C CNN
+	1    6800 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 3350 6200 3350
+Wire Wire Line
+	6200 3350 6200 3150
+Wire Wire Line
+	6200 3150 6550 3150
+Wire Wire Line
+	6550 3500 6550 3650
+Wire Wire Line
+	6550 3650 6200 3650
+Connection ~ 6200 3650
+Wire Wire Line
+	6200 3650 6200 3450
+Wire Wire Line
+	6550 3650 7100 3650
+Wire Wire Line
+	7100 3650 7100 3500
+Connection ~ 6550 3650
+Wire Wire Line
+	6550 3300 6550 3150
+Connection ~ 6550 3150
+Wire Wire Line
+	6550 3150 6700 3150
+Wire Wire Line
+	6900 3150 7100 3150
+Wire Wire Line
+	7100 3150 7100 3300
+$Comp
+L Device:D_TVS D?
+U 1 1 5B8A15DC
+P 7400 3400
+F 0 "D?" V 7354 3479 50  0000 L CNN
+F 1 "SMBJ7.0A" V 7445 3479 50  0000 L CNN
+F 2 "" H 7400 3400 50  0001 C CNN
+F 3 "~" H 7400 3400 50  0001 C CNN
+	1    7400 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3250 7400 3150
+Wire Wire Line
+	7400 3150 7100 3150
+Connection ~ 7100 3150
+Wire Wire Line
+	7100 3650 7400 3650
+Wire Wire Line
+	7400 3650 7400 3550
+Connection ~ 7100 3650
+$Comp
+L Device:C_Small C?
+U 1 1 5B8A2B86
+P 7950 3400
+F 0 "C?" H 8042 3446 50  0000 L CNN
+F 1 "0.1uF 50v" H 8042 3355 50  0000 L CNN
+F 2 "" H 7950 3400 50  0001 C CNN
+F 3 "~" H 7950 3400 50  0001 C CNN
+	1    7950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3300 7950 3150
+Wire Wire Line
+	7950 3150 7400 3150
+Connection ~ 7400 3150
+Wire Wire Line
+	7400 3650 7950 3650
+Wire Wire Line
+	7950 3650 7950 3500
+Connection ~ 7400 3650
+Text HLabel 7950 3150 2    50   Output ~ 0
++5V_OUT
+Text HLabel 7950 3650 2    50   Output ~ 0
+GND
+$EndSCHEMATC

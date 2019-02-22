@@ -1,0 +1,491 @@
+EESchema Schematic File Version 4
+LIBS:geyser_controller-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L custom:TPS63070 U10
+U 1 1 5C4957D8
+P 5500 3550
+F 0 "U10" H 5100 4200 50  0000 C CNN
+F 1 "TPS63070" H 5500 3550 50  0000 C CNN
+F 2 "custom:TPS63070x" H 4150 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63070.pdf" H 4150 3700 50  0001 C CNN
+F 4 "TPS63070" H 5500 3550 50  0001 C CNN "MPN"
+F 5 "Texas Instruments" H 5500 3550 50  0001 C CNN "Manufacturer"
+	1    5500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L5
+U 1 1 5C495869
+P 5500 2800
+F 0 "L5" V 5685 2800 50  0000 C CNN
+F 1 "1.5uH" V 5594 2800 50  0000 C CNN
+F 2 "" H 5500 2800 50  0001 C CNN
+F 3 "~" H 5500 2800 50  0001 C CNN
+F 4 "<14m" V 5500 2800 50  0001 C CNN "Resistance"
+	1    5500 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 2800 4900 2800
+Wire Wire Line
+	4900 2800 4900 3050
+Wire Wire Line
+	4900 3050 4950 3050
+Wire Wire Line
+	5600 2800 6100 2800
+Wire Wire Line
+	6100 2800 6100 3050
+Wire Wire Line
+	6100 3050 6050 3050
+$Comp
+L Device:C_Small C62
+U 1 1 5C4965D7
+P 3950 3400
+F 0 "C62" H 4042 3446 50  0000 L CNN
+F 1 "10uF" H 4042 3355 50  0000 L CNN
+F 2 "Capacitors:0603" H 3950 3400 50  0001 C CNN
+F 3 "~" H 3950 3400 50  0001 C CNN
+	1    3950 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3250 3950 3300
+$Comp
+L Device:C_Small C?
+U 1 1 5C498DE7
+P 7000 3500
+AR Path="/5B713D50/5C498DE7" Ref="C?"  Part="1" 
+AR Path="/5C49103C/5C498DE7" Ref="C64"  Part="1" 
+F 0 "C64" H 7092 3546 50  0000 L CNN
+F 1 "22uF" H 7092 3455 50  0000 L CNN
+F 2 "Capacitors:1206" H 7000 3500 50  0001 C CNN
+F 3 "~" H 7000 3500 50  0001 C CNN
+F 4 "Power Supply" H 7000 3500 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 700 -650 50  0001 C CNN "Dielectric"
+	1    7000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C498DEE
+P 7000 3750
+AR Path="/5B713D50/5C498DEE" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C498DEE" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 7000 3500 50  0001 C CNN
+F 1 "GND" H 6850 3700 50  0000 C CNN
+F 2 "" H 7000 3750 50  0001 C CNN
+F 3 "" H 7000 3750 50  0001 C CNN
+	1    7000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3600 7000 3750
+$Comp
+L Device:C_Small C?
+U 1 1 5C498DF7
+P 7350 3500
+AR Path="/5B713D50/5C498DF7" Ref="C?"  Part="1" 
+AR Path="/5C49103C/5C498DF7" Ref="C65"  Part="1" 
+F 0 "C65" H 7442 3546 50  0000 L CNN
+F 1 "1uF" H 7442 3455 50  0000 L CNN
+F 2 "Capacitors:0603" H 7350 3500 50  0001 C CNN
+F 3 "~" H 7350 3500 50  0001 C CNN
+F 4 "Power Supply" H 7350 3500 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 700 -650 50  0001 C CNN "Dielectric"
+	1    7350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C498DFE
+P 7350 3750
+AR Path="/5B713D50/5C498DFE" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C498DFE" Ref="#PWR0157"  Part="1" 
+F 0 "#PWR0157" H 7350 3500 50  0001 C CNN
+F 1 "GND" H 7200 3700 50  0000 C CNN
+F 2 "" H 7350 3750 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3600 7350 3750
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C498E0D
+P 7700 3500
+AR Path="/5B713D50/5C498E0D" Ref="C?"  Part="1" 
+AR Path="/5C49103C/5C498E0D" Ref="C66"  Part="1" 
+F 0 "C66" H 7791 3546 50  0000 L CNN
+F 1 "1000uF" H 7791 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 7700 3500 50  0001 C CNN
+F 3 "~" H 7700 3500 50  0001 C CNN
+F 4 "UWT0J102MNL1GS" H 7700 3500 50  0001 C CNN "MPN"
+F 5 "Power Supply" H 7700 3500 50  0001 C CNN "Functional Block"
+F 6 "Aluminium Film" H 700 -650 50  0001 C CNN "Dielectric"
+F 7 "6.3V" H 700 -650 50  0001 C CNN "Voltage Rating"
+F 8 "General Purpose" H 700 -650 50  0001 C CNN "Impedance"
+F 9 "1000hr @ 85degC" H 700 -650 50  0001 C CNN "Lifetime @ Temperature"
+	1    7700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C498E15
+P 7700 3750
+AR Path="/5B713D50/5C498E15" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C498E15" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 7700 3500 50  0001 C CNN
+F 1 "GND" H 7550 3700 50  0000 C CNN
+F 2 "" H 7700 3750 50  0001 C CNN
+F 3 "" H 7700 3750 50  0001 C CNN
+	1    7700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3750 7700 3600
+$Comp
+L Device:C_Small C?
+U 1 1 5C498E27
+P 8150 3500
+AR Path="/5C498E27" Ref="C?"  Part="1" 
+AR Path="/5B713D50/5C498E27" Ref="C?"  Part="1" 
+AR Path="/5C49103C/5C498E27" Ref="C67"  Part="1" 
+F 0 "C67" H 8242 3546 50  0000 L CNN
+F 1 "0.1uF" H 8242 3455 50  0000 L CNN
+F 2 "Capacitors:0603" H 8150 3500 50  0001 C CNN
+F 3 "~" H 8150 3500 50  0001 C CNN
+F 4 "Power Supply" H 8150 3500 50  0001 C CNN "Functional Block"
+F 5 "X7R" H 300 -650 50  0001 C CNN "Dielectric"
+	1    8150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C498E2E
+P 8550 3750
+AR Path="/5C498E2E" Ref="#PWR?"  Part="1" 
+AR Path="/5B713D50/5C498E2E" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C498E2E" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 8550 3500 50  0001 C CNN
+F 1 "GND" H 8555 3577 50  0000 C CNN
+F 2 "" H 8550 3750 50  0001 C CNN
+F 3 "" H 8550 3750 50  0001 C CNN
+	1    8550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5C498E3E
+P 8550 3500
+AR Path="/5C498E3E" Ref="C?"  Part="1" 
+AR Path="/5B713D50/5C498E3E" Ref="C?"  Part="1" 
+AR Path="/5C49103C/5C498E3E" Ref="C68"  Part="1" 
+F 0 "C68" H 8638 3546 50  0000 L CNN
+F 1 "47uF" H 8638 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 8550 3500 50  0001 C CNN
+F 3 "~" H 8550 3500 50  0001 C CNN
+F 4 "EEE-0JA470WR" H 300 -650 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 300 -650 50  0001 C CNN "Manufacturer"
+F 6 "Power Supply" H 8550 3500 50  0001 C CNN "Functional Block"
+F 7 "Aluminium Film" H 300 -650 50  0001 C CNN "Dielectric"
+F 8 "6.3V" H 300 -650 50  0001 C CNN "Voltage Rating"
+F 9 "General Purpose" H 300 -650 50  0001 C CNN "Impedance"
+F 10 "1000hr @ 85degC" H 300 -650 50  0001 C CNN "Lifetime @ Temperature"
+	1    8550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 3600 8550 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5C498E4C
+P 8150 3750
+AR Path="/5B713D50/5C498E4C" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C498E4C" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 8150 3500 50  0001 C CNN
+F 1 "GND" H 8000 3700 50  0000 C CNN
+F 2 "" H 8150 3750 50  0001 C CNN
+F 3 "" H 8150 3750 50  0001 C CNN
+	1    8150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3600 8150 3750
+$Comp
+L Device:CP1_Small C?
+U 1 1 5C49AD2C
+P 3550 3400
+AR Path="/5B713D50/5C49AD2C" Ref="C?"  Part="1" 
+AR Path="/5C49103C/5C49AD2C" Ref="C61"  Part="1" 
+F 0 "C61" H 3641 3446 50  0000 L CNN
+F 1 "100uF" H 3641 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 3550 3400 50  0001 C CNN
+F 3 "~" H 3550 3400 50  0001 C CNN
+F 4 "General Purpose" H -750 -400 50  0001 C CNN "Impedance"
+F 5 "1000hr @ 85degC" H -750 -400 50  0001 C CNN "Lifetime @ Temperature"
+F 6 "EEE-1AA101SP" H -750 -400 50  0001 C CNN "MPN"
+F 7 "Panasonic" H -750 -400 50  0001 C CNN "Manufacturer"
+F 8 "Power Supply" H 3550 3400 50  0001 C CNN "Functional Block"
+F 9 "Aluminium Film" H -750 -400 50  0001 C CNN "Dielectric"
+F 10 "16V" H -750 -400 50  0001 C CNN "Voltage Rating"
+	1    3550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C49AD33
+P 3550 3600
+AR Path="/5B713D50/5C49AD33" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C49AD33" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 3550 3350 50  0001 C CNN
+F 1 "GND" H 3400 3550 50  0000 C CNN
+F 2 "" H 3550 3600 50  0001 C CNN
+F 3 "" H 3550 3600 50  0001 C CNN
+	1    3550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3600 3550 3500
+Wire Wire Line
+	3550 3300 3550 3250
+Wire Wire Line
+	3550 3250 3950 3250
+Connection ~ 3950 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5C49B65D
+P 3950 3600
+AR Path="/5B713D50/5C49B65D" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C49B65D" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 3950 3350 50  0001 C CNN
+F 1 "GND" H 3800 3550 50  0000 C CNN
+F 2 "" H 3950 3600 50  0001 C CNN
+F 3 "" H 3950 3600 50  0001 C CNN
+	1    3950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3600 3950 3500
+Wire Wire Line
+	6050 3250 6400 3250
+Wire Wire Line
+	8550 3250 8550 3400
+Wire Wire Line
+	8150 3250 8150 3400
+Connection ~ 8150 3250
+Wire Wire Line
+	8150 3250 8550 3250
+Wire Wire Line
+	7700 3250 7700 3400
+Connection ~ 7700 3250
+Wire Wire Line
+	7350 3250 7350 3400
+Connection ~ 7350 3250
+Wire Wire Line
+	7350 3250 7700 3250
+Wire Wire Line
+	7000 3250 7000 3400
+Connection ~ 7000 3250
+Wire Wire Line
+	7000 3250 7350 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5C4A0F6E
+P 5550 4400
+AR Path="/5B713D50/5C4A0F6E" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C4A0F6E" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 5550 4150 50  0001 C CNN
+F 1 "GND" H 5400 4350 50  0000 C CNN
+F 2 "" H 5550 4400 50  0001 C CNN
+F 3 "" H 5550 4400 50  0001 C CNN
+	1    5550 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4250 5450 4300
+Wire Wire Line
+	5450 4300 5550 4300
+Wire Wire Line
+	5550 4300 5550 4250
+Wire Wire Line
+	5550 4400 5550 4300
+Connection ~ 5550 4300
+$Comp
+L Device:C_Small C63
+U 1 1 5C4A25B3
+P 4850 4250
+F 0 "C63" H 4942 4296 50  0000 L CNN
+F 1 "100nF" H 4942 4205 50  0000 L CNN
+F 2 "Capacitors:0603" H 4850 4250 50  0001 C CNN
+F 3 "~" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4150 4850 4050
+Wire Wire Line
+	4850 4050 4950 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5C4A2B80
+P 4850 4400
+AR Path="/5B713D50/5C4A2B80" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C4A2B80" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 4850 4150 50  0001 C CNN
+F 1 "GND" H 4700 4350 50  0000 C CNN
+F 2 "" H 4850 4400 50  0001 C CNN
+F 3 "" H 4850 4400 50  0001 C CNN
+	1    4850 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4400 4850 4350
+$Comp
+L Device:R_Small R64
+U 1 1 5C4A4AE2
+P 6400 3400
+F 0 "R64" H 6459 3446 50  0000 L CNN
+F 1 "470k" H 6459 3355 50  0000 L CNN
+F 2 "Resistors:0603" H 6400 3400 50  0001 C CNN
+F 3 "~" H 6400 3400 50  0001 C CNN
+	1    6400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R65
+U 1 1 5C4A4B2C
+P 6400 3700
+F 0 "R65" H 6459 3746 50  0000 L CNN
+F 1 "150k" H 6459 3655 50  0000 L CNN
+F 2 "Resistors:0603" H 6400 3700 50  0001 C CNN
+F 3 "~" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3550 6400 3550
+Wire Wire Line
+	6400 3550 6400 3500
+Wire Wire Line
+	6400 3600 6400 3550
+Connection ~ 6400 3550
+Wire Wire Line
+	6400 3300 6400 3250
+Connection ~ 6400 3250
+Wire Wire Line
+	6400 3250 6700 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5C4A6213
+P 6400 3850
+AR Path="/5B713D50/5C4A6213" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C4A6213" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 6400 3600 50  0001 C CNN
+F 1 "GND" H 6250 3800 50  0000 C CNN
+F 2 "" H 6400 3850 50  0001 C CNN
+F 3 "" H 6400 3850 50  0001 C CNN
+	1    6400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3800 6400 3850
+$Comp
+L power:GND #PWR?
+U 1 1 5C4A6A6C
+P 6250 3700
+AR Path="/5B713D50/5C4A6A6C" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C4A6A6C" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 6250 3450 50  0001 C CNN
+F 1 "GND" H 6100 3650 50  0000 C CNN
+F 2 "" H 6250 3700 50  0001 C CNN
+F 3 "" H 6250 3700 50  0001 C CNN
+	1    6250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3650 6250 3650
+Wire Wire Line
+	6250 3650 6250 3700
+$Comp
+L Device:R_Small R66
+U 1 1 5C4A800F
+P 6700 3600
+F 0 "R66" H 6641 3646 50  0000 R CNN
+F 1 "100k" H 6641 3555 50  0000 R CNN
+F 2 "Resistors:0603" H 6700 3600 50  0001 C CNN
+F 3 "~" H 6700 3600 50  0001 C CNN
+	1    6700 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4050 6700 4050
+Wire Wire Line
+	6700 4050 6700 3700
+Wire Wire Line
+	6700 3500 6700 3250
+Connection ~ 6700 3250
+Wire Wire Line
+	6700 3250 7000 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5C4AB434
+P 4800 3950
+AR Path="/5B713D50/5C4AB434" Ref="#PWR?"  Part="1" 
+AR Path="/5C49103C/5C4AB434" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 4800 3700 50  0001 C CNN
+F 1 "GND" H 4650 3900 50  0000 C CNN
+F 2 "" H 4800 3950 50  0001 C CNN
+F 3 "" H 4800 3950 50  0001 C CNN
+	1    4800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3950 4800 3850
+Wire Wire Line
+	4800 3850 4950 3850
+$Comp
+L Device:R_Small R63
+U 1 1 5C4ADC89
+P 4750 3450
+F 0 "R63" H 4809 3496 50  0000 L CNN
+F 1 "10k" H 4809 3405 50  0000 L CNN
+F 2 "Resistors:0603" H 4750 3450 50  0001 C CNN
+F 3 "~" H 4750 3450 50  0001 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3550 4750 3650
+Wire Wire Line
+	4750 3650 4950 3650
+Wire Wire Line
+	4750 3350 4750 3250
+Connection ~ 4750 3250
+Wire Wire Line
+	4750 3250 4950 3250
+Text HLabel 8550 3250 2    50   Output ~ 0
+VOUT
+Text HLabel 3550 3250 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	3950 3250 4750 3250
+Text HLabel 4950 3750 0    50   Input ~ 0
+EN
+Wire Wire Line
+	7700 3250 8150 3250
+$EndSCHEMATC
