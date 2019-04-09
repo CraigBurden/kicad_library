@@ -62,6 +62,10 @@ K PIC32 PIC32MM
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001387c.pdf
 $ENDCMP
 #
+$CMP THVD1500
+D 500 kbps RS-485 Transceivers With ±8-kV IEC ESD Protection
+$ENDCMP
+#
 $CMP TPS63070
 D 2-V to 16-V Buck-Boost Converter With 3.6-A Switch Current
 K Buck-Boost Switch
