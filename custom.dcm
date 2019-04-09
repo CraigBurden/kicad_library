@@ -66,6 +66,10 @@ $CMP THVD1500
 D 500 kbps RS-485 Transceivers With ±8-kV IEC ESD Protection
 $ENDCMP
 #
+$CMP TPS613222ADBVR
+D 6.5-µA Quiescent current, 1.8-A switch current boost converter
+$ENDCMP
+#
 $CMP TPS63070
 D 2-V to 16-V Buck-Boost Converter With 3.6-A Switch Current
 K Buck-Boost Switch
