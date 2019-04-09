@@ -64,10 +64,12 @@ $ENDCMP
 #
 $CMP THVD1500
 D 500 kbps RS-485 Transceivers With ±8-kV IEC ESD Protection
+F http://www.ti.com/lit/ds/symlink/thvd1500.pdf
 $ENDCMP
 #
 $CMP TPS613222ADBVR
 D 6.5-µA Quiescent current, 1.8-A switch current boost converter
+F http://www.ti.com/lit/ds/symlink/tps61322.pdf
 $ENDCMP
 #
 $CMP TPS63070
