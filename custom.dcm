@@ -45,6 +45,11 @@ D Single-Phase High-Performance Wide-Span Energy Metering IC
 F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-46002-SE-M90E26-Datasheet.pdf
 $ENDCMP
 #
+$CMP MIC79050-4.2YS
+D Simple Lithium-Ion Battery Charger
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20005771A.pdf
+$ENDCMP
+#
 $CMP MPX53xP
 D Differential/Vented Gauge Pressure Transducer
 K Pressure Differential Vented Gauge
