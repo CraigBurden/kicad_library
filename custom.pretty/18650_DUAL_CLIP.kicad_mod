@@ -1,5 +1,5 @@
-(module 18650_DUAL_CLIP (layer F.Cu) (tedit 5CDC297A)
-  (descr "18650 battery clip on both sides and cable tie slots")
+(module 18650_DUAL_CLIP (layer F.Cu) (tedit 5CE4230A)
+  (descr "18650 battery clip on both sides and cable tie slots. Using the Keystone 54 battery clip")
   (fp_text reference REF** (at 23.585 6.3 180) (layer F.SilkS)
     (effects (font (size 0.6 0.6) (thickness 0.127)))
   )
