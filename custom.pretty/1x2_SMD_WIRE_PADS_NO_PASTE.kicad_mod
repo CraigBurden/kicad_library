@@ -1,0 +1,10 @@
+(module 1x2_SMD_WIRE_PADS_NO_PASTE (layer F.Cu) (tedit 5D1CB2E2)
+  (fp_text reference REF** (at 0.05 -2.8) (layer F.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.127)))
+  )
+  (fp_text value 1x2_SMD_WIRE_PADS_NO_PASTE (at 0 3.1) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 2 smd oval (at 0 1.27) (size 5 2) (layers F.Cu F.Mask))
+  (pad 1 smd oval (at 0 -1.27) (size 5 2) (layers F.Cu F.Mask))
+)
