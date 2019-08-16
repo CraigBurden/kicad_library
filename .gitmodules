@@ -4,3 +4,6 @@
 [submodule "KiBoM"]
 	path = KiBoM
 	url = https://github.com/SchrodingersGat/KiBoM.git
+[submodule "Scripts/KiBoM"]
+	path = Scripts/KiBoM
+	url = https://github.com/SchrodingersGat/KiBoM.git
