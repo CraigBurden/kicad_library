@@ -1,3 +1,6 @@
 [submodule "Scripts/InteractiveHtmlBom"]
 	path = Scripts/InteractiveHtmlBom
 	url = https://github.com/openscopeproject/InteractiveHtmlBom.git
+[submodule "KiBoM"]
+	path = KiBoM
+	url = https://github.com/SchrodingersGat/KiBoM.git
