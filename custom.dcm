@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 18650_DUAL_CLIP
+D Dual Keystone 54 battery clips holding 18650
+$ENDCMP
+#
 $CMP AC1020
 F https://www.promelec.ru/pdf/AC-1020_Jun-06.pdf
 $ENDCMP
