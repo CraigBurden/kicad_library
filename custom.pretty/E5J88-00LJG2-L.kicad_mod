@@ -1,4 +1,4 @@
-(module E5J88-00LJG2-L (layer F.Cu) (tedit 5D43307D)
+(module E5J88-00LJG2-L (layer F.Cu) (tedit 5E39279C)
   (fp_text reference REF** (at 6.4516 5.7912) (layer F.SilkS)
     (effects (font (size 0.6 0.6) (thickness 0.127)))
   )
@@ -9,6 +9,7 @@
   (fp_line (start -7.9 -9.9) (end 7.9 -9.9) (layer F.SilkS) (width 0.15))
   (fp_line (start 7.9 -9.9) (end 7.9 5.1) (layer F.SilkS) (width 0.15))
   (fp_line (start -7.9 5.1) (end -7.9 -9.9) (layer F.SilkS) (width 0.15))
+  (fp_line (start 0 5.1) (end 0 3.6) (layer F.SilkS) (width 0.12))
   (pad 1 thru_hole circle (at 3.555 -2.54) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 2.535 -4.32) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
   (pad 3 thru_hole circle (at 1.515 -2.54) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask))
