@@ -1,0 +1,9 @@
+(module SF_GP5.0_48mm (layer F.Cu) (tedit 5E4150BC)
+  (fp_text reference REF** (at 0 4.6) (layer F.SilkS) hide
+    (effects (font (size 0.6 0.6) (thickness 0.127)))
+  )
+  (fp_text value SF_GP5.0_48mm (at 0 -4.6) (layer F.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.127)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 8 8) (drill 5.5) (layers *.Cu *.Mask))
+)
