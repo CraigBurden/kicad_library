@@ -1,0 +1,9 @@
+(module SF-R125-xxx (layer F.Cu) (tedit 5E40FCE4)
+  (fp_text reference REF** (at 0 2.2) (layer F.SilkS) hide
+    (effects (font (size 0.6 0.6) (thickness 0.127)))
+  )
+  (fp_text value SF-R125-xxx (at 0 -2.2) (layer F.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.127)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 3.2 3.2) (drill 2.4) (layers *.Cu *.Mask))
+)
