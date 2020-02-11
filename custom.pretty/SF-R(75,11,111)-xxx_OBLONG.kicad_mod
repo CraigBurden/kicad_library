@@ -1,0 +1,12 @@
+(module "SF-R(75,11,111)-xxx_OBLONG" (layer F.Cu) (tedit 5E425593)
+  (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide
+    (effects (font (size 0.6 0.6) (thickness 0.127)))
+  )
+  (fp_text value "SF-R(75,11,111)-xxx_OBLONG" (at 0 -1.8 90) (layer F.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.127)) (justify left))
+  )
+  (fp_text user %V (at 0 -1.8 90) (layer B.SilkS)
+    (effects (font (size 0.6 0.6) (thickness 0.127)) (justify left))
+  )
+  (pad 1 thru_hole oval (at 0 0) (size 1.64 2.64) (drill 1.35 (offset 0 -0.5)) (layers *.Cu *.Mask))
+)
