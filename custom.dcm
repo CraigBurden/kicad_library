@@ -29,6 +29,12 @@ $CMP FXLN83xxQ
 D  3-Axis LowPower Analog-Output Accelerometer
 $ENDCMP
 #
+$CMP HX711
+D 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales
+K loadcell, ADC, scale 
+F https://cdn.sparkfun.com/assets/b/f/5/a/e/hx711F_EN.pdf
+$ENDCMP
+#
 $CMP JSN-SR04T
 D Waterproof Ultrasonic Proximity Sensor
 K Ultrasonic waterproof
