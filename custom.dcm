@@ -63,6 +63,7 @@ $ENDCMP
 $CMP MPRxxxxxxxxxxxxxx
 D MicroPressure Board Mount Pressure Sensors. Compact, High Accuracy, Compensated/Amplified
 K pressure, air
+F https://sensing.honeywell.com/honeywell-sensing-micropressure-board-mount-pressure-mpr-series-datasheet-32332628.pdf
 $ENDCMP
 #
 $CMP MPX53xP
