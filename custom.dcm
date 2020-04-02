@@ -31,7 +31,7 @@ $ENDCMP
 #
 $CMP HX711
 D 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales
-K loadcell, ADC, scale 
+K loadcell, ADC, scale
 F https://cdn.sparkfun.com/assets/b/f/5/a/e/hx711F_EN.pdf
 $ENDCMP
 #
@@ -58,6 +58,11 @@ $ENDCMP
 $CMP MIC79050-4.2YS
 D Simple Lithium-Ion Battery Charger
 F http://ww1.microchip.com/downloads/en/DeviceDoc/20005771A.pdf
+$ENDCMP
+#
+$CMP MPRxxxxxxxxxxxxxx
+D MicroPressure Board Mount Pressure Sensors. Compact, High Accuracy, Compensated/Amplified
+K pressure, air
 $ENDCMP
 #
 $CMP MPX53xP
