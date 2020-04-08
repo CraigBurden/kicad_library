@@ -31,6 +31,7 @@ $ENDCMP
 #
 $CMP HIH712x
 D Honeywell HumidIcon™ Digital Humidity/Temperature Sensors
+F https://sensing.honeywell.com/index.php?ci_id=147071
 $ENDCMP
 #
 $CMP HX711
