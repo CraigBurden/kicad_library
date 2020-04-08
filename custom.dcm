@@ -29,6 +29,10 @@ $CMP FXLN83xxQ
 D  3-Axis LowPower Analog-Output Accelerometer
 $ENDCMP
 #
+$CMP HIH712x
+D Honeywell HumidIcon™ Digital Humidity/Temperature Sensors
+$ENDCMP
+#
 $CMP HX711
 D 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales
 K loadcell, ADC, scale
