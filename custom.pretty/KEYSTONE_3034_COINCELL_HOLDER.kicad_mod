@@ -1,4 +1,4 @@
-(module KEYSTONE_3034_COINCELL_HOLDER (layer F.Cu) (tedit 5E9199C2)
+(module KEYSTONE_3034_COINCELL_HOLDER (layer F.Cu) (tedit 5E919CE7)
   (fp_text reference REF** (at -6.05 8.09) (layer F.SilkS)
     (effects (font (size 0.6 0.6) (thickness 0.127)))
   )
@@ -34,4 +34,9 @@
   (pad 1 smd rect (at -10.985 0) (size 1.27 5.08) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at 10.985 0) (size 1.27 5.08) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0 0) (size 3.96 3.96) (layers F.Cu F.Paste F.Mask))
+  (model "${KIPRJMOD}/galactose-kicad-library/3D Packages/KEYSTONE_3034.STEP"
+    (offset (xyz 0 -7.4 3.76))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
