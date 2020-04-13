@@ -25,6 +25,10 @@ $CMP CURRENT_TRANSFORMER
 D Current transformer
 $ENDCMP
 #
+$CMP DT024CTFT(-TS)
+F https://cdn.displaytech-us.com/sites/default/files/display-data-sheet/DT024CTFT-v10_0.pdf
+$ENDCMP
+#
 $CMP FXLN83xxQ
 D  3-Axis LowPower Analog-Output Accelerometer
 $ENDCMP
