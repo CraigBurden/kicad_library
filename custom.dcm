@@ -92,6 +92,12 @@ K PIC32 PIC32MM
 F http://ww1.microchip.com/downloads/en/DeviceDoc/60001387c.pdf
 $ENDCMP
 #
+$CMP SW_SPST_13_24
+D Single Pole Single Throw (SPST) switch
+K switch lever
+F ~
+$ENDCMP
+#
 $CMP THVD1500
 D 500 kbps RS-485 Transceivers With ±8-kV IEC ESD Protection
 F http://www.ti.com/lit/ds/symlink/thvd1500.pdf
