@@ -14,6 +14,12 @@ K ADC
 F https://www.analog.com/media/en/technical-documentation/data-sheets/AD7792_7793.pdf
 $ENDCMP
 #
+$CMP AD7793_BREAKOUT
+D 3-Channel, Low Noise, Low Power, 16-/24-Bit∑-Δ ADC with On-Chip In-Amp and Reference
+K ADC
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD7792_7793.pdf
+$ENDCMP
+#
 $CMP AD8293Gxx
 D Zero-drift, Instrumentation Amplifier with filter and Fixed Gain
 K Instrumentation, Amplifier
